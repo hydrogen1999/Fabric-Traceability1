@@ -1,0 +1,18 @@
+{
+	Type: "Gạo", 
+	Primarykey: "005", 
+	Name: "Gạo lứt", 
+	Des: "Trồng trên ruộng", 
+	Specification: "1kg", 
+	Source: "Thái Bình", 
+	Machining: "Thu hoạch bằng máy gặt", 
+	Remarks: "Không", Principal: "Việt Hương", 
+	PhoneNumber: "123456789", Photo: "/static/photo/gaolut.jpg", 
+	ShelfLife: "1 năm", 
+	StorageMethod: "Nơi khô ráo, nhiệt độ bình thường", 
+	Brand: "Việt Hương", 
+	Vendor: "Nhà máy Thái Bình", 
+	PlaceOfProduction: "Việt Nam", 
+	ExecutiveStandard: "TCVN 11888:2017", 
+	Time: "2020-12-31 20:46:05"
+}
