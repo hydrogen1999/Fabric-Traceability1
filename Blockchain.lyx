@@ -1,0 +1,8957 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\begin_preamble
+\def\definitionname{Định nghĩa}
+\def\examplename{Ví dụ}
+\renewcommand*{\thesection}{\arabic{section}}
+\newrefformat{tab}{Bảng \ref{#1}}
+\newrefformat{fig}{Hình \ref{#1}}
+\newrefformat{chap}{Chương \ref{#1}}
+\usepackage{color}
+\usepackage{listings}
+\lstset{language=Go,
+  basicstyle=\ttfamily\scriptsize,
+  keywordstyle=\color{blue}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  commentstyle=\color{green}\ttfamily}
+\usepackage{tocloft}
+\renewcommand\cftchappresnum{Chương }
+\renewcommand\cftchapaftersnum{.}
+\newlength\chapterprefixlen
+\settowidth\chapterprefixlen{\textbf{Chương 3.\ }}
+\cftsetindents{chap}{0pt}{\chapterprefixlen}
+\RequirePackage{fix-cm}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+\end_preamble
+\options 13pt
+\use_default_options true
+\begin_modules
+theorems-bytype
+theorems-chap-bytype
+figs-within-sections
+tabs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language vietnamese
+\language_package default
+\inputencoding utf8x
+\fontencoding T5
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 2cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Lời cam đoan
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Lời cam đoan}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Em xin cam đoan các nội dung trong báo cáo đồ án với đề tài “Ứng dụng công
+ nghệ Blockchain trong truy xuất nguồn gốc thực phẩm” là công trình nghiên
+ cứu của bản thân dưới sự hướng dẫn của TS.
+ Lê Chí Ngọc.
+ Các số liệu, hình ảnh, trích dẫn có nguồn gốc rõ ràng và tuân thủ nguyên
+ tắc.
+ Báo cáo không có sự sao chép từ các công trình, nghiên cứu của người khác
+ mà không ghi rõ trong tài liệu tham khảo.
+ Em xin chịu trách nhiệm về lời cam đoan này.
+\end_layout
+
+\begin_layout Standard
+\align right
+Hà Nội, ngày 07 tháng 01 năm 2021
+\end_layout
+
+\begin_layout Standard
+\align right
+Sinh viên
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+Nguyễn Công Thịnh
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Lời nói đầu
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Lời nói đầu}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+1.
+ Cơ sở khoa học và thực tiễn của đề tài
+\end_layout
+
+\begin_layout Standard
+Năm 2020 vừa qua chứng kiến những biến động lớn của thế giới do ảnh hưởng
+ của đại dịch Covid-19.
+ Dịch bệnh làm thay đổi xu hướng tiêu dùng thông minh, đồng thời như một
+ cú hích đẩy mạnh việc chuyển đổi số và tạo ra xu hướng đầu tư vào các loại
+ tiền điện tử.
+ Phải nói rằng năm 2020 là một năm bùng nổ của thị trường tiền điện tử với
+ sự phát triển mạnh của các đồng tiền điện tử, chẳng hạn như Bitcoin, liên
+ tục lập kỷ lục về giá trị của đồng tiền này.
+ Những khái niệm về tiền điện tử, truy xuất nguồn gốc thực phẩm trong tiêu
+ dùng hay chính phủ điện tử nêu trên đều xoay quanh một khái niệm đang nhận
+ được sự quan tâm rất lớn đến từ cộng đồng thế giới, đó chính là công nghệ
+ Blockchain.
+ Từ các chính phủ, ngân hàng cho đến doanh nghiệp đang thực sự coi đây là
+ một công nghệ tiềm năng và hoàn toàn có khả năng lớn mạnh trong thời gian
+ tới.
+ Với những tính năng hữu ích mà nói mạng lại, công nghệ này sẽ mở ra một
+ xu hướng ứng dụng tiềm năng cho nhiều lĩnh vực như tài chính ngân hàng,
+ bán lẻ, vận chuyển hàng hóa, sản xuất, v.v.
+ 
+\end_layout
+
+\begin_layout Standard
+Cùng với xu thế ứng dụng công nghệ blockchain, những mối lo về bệnh dịch,
+ về thực phẩm bẩn, thực phẩm nhiễm hóa chất độc hại cũng được người dân
+ hết sức quan tâm.
+ Do đó, việc áp dụng công nghệ blockchain là việc làm cần thiết.
+ Chính vì vậy, em đã chọn đề tài: 
+\series bold
+\emph on
+“Ứng dụng công nghệ blockchain trong truy xuất nguồn gốc thực phẩm”
+\series default
+\emph default
+ để làm hướng nghiên cứu cho bản thân mình.
+ Đồng thời áp dụng nền tảng Hyperledger Fabric - một trong những nền tảng
+ blockchain phổ biến hiện nay làm cơ sở để phát triển hệ thống.
+ Blockchain có tiềm năng làm thay đổi xu hướng tiêu dùng của người dân,
+ nhưng có lẽ sự ảnh hưởng lớn nhất là tạo ra một mức độ minh bạch mới.
+ Việc áp dụng blockchain rộng rãi sẽ tạo ra sự minh bạch đáng kể ở mọi cấp
+ độ, tạo được niềm tin của người tiêu dùng.
+ Trên quy mô lớn, mỗi khi một sản phẩm thực phẩm được sản xuất ra, được
+ vận chuyển, chế biến hay mua bán, giao dịch sẽ được ghi chép lại trên một
+ sổ cái kỹ thuật số, nhằm để lại dấu vết.
+ Như vậy, hàng chục triệu giao dịch liên quan đến thực phẩm hàng năm sẽ
+ được hiển thị công khai và có thể kiểm soát nhờ cơ sở dữ liệu được tạo
+ ra bởi công nghệ blockchain.
+ 
+\end_layout
+
+\begin_layout Standard
+Mặc dù đã có những chuyển biến tích cực trong việc áp dụng hệ thống công
+ nghệ thông tin để hỗ trợ công tác truy xuất, song các hệ thống phần mềm
+ vẫn không tránh khỏi một số vấn đề.
+ Ví dụ như hệ thống phần mềm chưa được tích hợp, liên kết chặt chẽ, chưa
+ có một mô hình dữ liệu chuẩn, việc chia sẻ, trao đổi dữ liệu còn khó khăn
+ làm cho việc tổng hợp dữ liệu phục vụ quản lý, điều hành mất nhiều thời
+ gian chuyển đổi, thiếu chính xác.
+ Việc thiết kế cơ sở dữ liệu còn chưa linh động, dẫn tới khi các tiêu chuẩn
+ về thực phẩm thay đổi, nhiều chương trình còn gặp khó khăn trong việc cấu
+ trúc lại cơ sở dữ liệu để phù hợp với tiêu chuẩn đó.
+ Đặc biệt trong quá trình sản xuất và chế biến sản phẩm vẫn còn một số điểm
+ hạn chế của hệ thống phần mềm cho tới nay còn chưa đáp ứng được tối đa
+ nhu cầu của khách hàng.
+ Có thể kể đến đó là yêu cầu của người tiêu dùng, muốn nắm bắt thông tin
+ về nguồn nguyên liệu, quá trình sản xuất, phương pháp lưu trư và bảo quản
+ của sản phẩm một cách rõ ràng, công khai minh bạch.
+ Do vậy, việc nghiên cứu và áp dụng công nghệ blockchain hỗ trợ hoạt động
+ truy xuất nguồn gốc thực phẩm sẽ trở thành một ứng dụng thiết thực và đem
+ lại hiệu quả cao, khi mà nó có thể cung cấp cho các đối tượng từ người
+ tiêu dùng cho đến các đơn vị tham gia vào quá trình sản xuất sản phẩm,
+ các cấp chức năng có thể khai thác được dữ liệu, đảm bảo dữ liệu được truy
+ vấn không bị thay đổi, tiết kiệm chi phí vận hành các hệ thống cơ sở dữ
+ liệu truyền thống, đồng thời kiểm soát tránh xảy ra trường hợp thực phẩm
+ không đạt yêu cầu tuồn ra thị trường.
+\end_layout
+
+\begin_layout Subsection*
+2.
+ Đối tượng và phạm vi nghiên cứu
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Đối tượng nghiên cứu
+\series default
+: bao gồm khái niệm về blockchain và các khái niệm liên quan đồng thời cũng
+ nghiên cứu về công tác truy xuất nguồn gốc thực phẩm và việc ứng dụng công
+ nghệ blockchian trong vận hành hệ thống truy xuất nguồn gốc thực phẩm.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Phạm vi nghiên cứu
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Nghiên cứu vấn đề truy xuất nguồn gốc trong phạm vi giải quyết của blockchain.
+ 
+\end_layout
+
+\begin_layout Itemize
+Giới hạn trong nghiệp vụ truy xuất nguồn gốc thực phẩm.
+\end_layout
+
+\begin_layout Subsection*
+3.
+ Kết cấu của báo cáo
+\end_layout
+
+\begin_layout Standard
+Nội dung báo cáo được chia làm 3 phần như sau: 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Chương 1.
+ 
+\series bold
+Giới thiệu tổng quan về blockchain, hợp đồng thông minh và các ứng dụng
+ của blockchain.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Chương 2.
+ 
+\series bold
+Khái niệm, đặc điểm, bản chất của truy xuất nguồn gốc.
+ Quy trình xây dựng một hệ thống truy xuất nguồn gốc.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Chương 3.
+ 
+\series bold
+Trình bày về nền tảng Hyperledger Fabric.
+ Áp dụng blockchain để xây dựng ứng dụng truy xuất nguồn gốc thực phẩm.
+ Trình bày về quá trình thực nghiệm, kiểm thử và đánh giá, các kết quả thực
+ hiện được.
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuối cùng, em xin gửi lời cảm ơn đặc biệt và sâu sắc tới thầy TS.
+ Lê Chí Ngọc, giảng viên thuộc Bộ môn Toán Tin, Viện Toán ứng dụng và Tin
+ học, Trường Đại học Bách Khoa Hà Nội đã trực tiếp hướng dẫn và chỉ bảo
+ em tận tình, đồng thời đưa ra những kinh nghiệm quý báu để em có thể hoàn
+ thành được báo cáo này.
+ Em cũng xin trân trọng cảm ơn các thầy cô giảng viên viện Toán ứng dụng
+ và Tin học đã giảng dạy truyền đạt cho em những kiến thức trong suốt những
+ năm tháng học tại trường.
+ Những kiến thức không những giúp em nâng cao kỹ năng bản thân mà còn giúp
+ ích cho em trong cả công việc sau này.
+ Mặc dù đã cố gắng hết sức, tuy nhiên trong quá trình thực hiện em không
+ tránh khỏi được những thiếu sót, em rất mong nhận được sự thông cảm và
+ đánh giá chân tình của thầy cô để báo cáo của em được hoàn thiện hơn nữa!
+\end_layout
+
+\begin_layout Standard
+\align right
+Hà Nội, ngày 07 tháng 01 năm 2021
+\end_layout
+
+\begin_layout Standard
+\align right
+Sinh viên
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+Nguyễn Công Thịnh
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:1"
+
+\end_inset
+
+Công nghệ Blockchain
+\end_layout
+
+\begin_layout Standard
+Trong những năm trở lại đây, công nghệ ngày càng phát triển vượt bậc với
+ sự ra đời của hàng loạt những công nghệ mới và những ứng dụng tuyệt vời
+ mà chúng đem lại.
+ Một trong số những công nghệ mới đó được ứng dụng một cách rộng rãi trong
+ nhiều lĩnh vực cuộc sống như tiền điện tử, bảo hiểm, chuỗi cung ứng
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Chuỗi cung ứng
+\end_layout
+
+\end_inset
+
+ và logistics
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Logistics
+\end_layout
+
+\end_inset
+
+,.v.v.
+ mà chắc hẳn có nhiều người biết tới, đó chính là công nghệ blockchain
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Blockchain
+\end_layout
+
+\end_inset
+
+.
+ Vậy blockchain là gì?
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:1.1"
+
+\end_inset
+
+Lịch sử hình thành
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1.1.1"
+
+\end_inset
+
+Sự ra đời của Blockchain
+\end_layout
+
+\begin_layout Standard
+Blockchain ra đời từ sau cuộc khủng hoảng tài chính năm 2008, hệ thống tài
+ chính Mỹ sụp đổ hoàn toàn khiến người dân đánh mất niềm tin vào đồng tiền
+ của một bên thứ ba đáng tin cậy.
+ Ý tưởng về Bitcoin – một đồng tiền phân cấp ngang hàng trên mạng máy tính
+ lần đầu tiên được Satoshi Nakamoto
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Satoshi Nakamoto
+\end_layout
+
+\end_inset
+
+ đưa ra thông qua bài báo có tiêu đề 
+\begin_inset Quotes eld
+\end_inset
+
+Bitcoin: A Peer-to-Peer Electronic Cash System
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto"
+literal "false"
+
+\end_inset
+
+.
+ Thông qua bài báo, ông đã xác lập Bitcoin là một đồng tiền điện tử và phát
+ minh ra cơ sở dữ liệu blockchain đầu tiên.
+\end_layout
+
+\begin_layout Standard
+Năm 2014, công nghệ blockchain được tách khỏi tiền điện tử và có tiềm năng
+ rất lớn với các giao dịch tài chính, liên tổ chức 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "HUGHES2019114"
+literal "false"
+
+\end_inset
+
+.
+ Kể từ đây, công nghệ blockchain chuyển sang giai đoạn phát triển thứ hai
+ với nhiều ứng dụng ngoài tiền tệ xuất hiện.
+ Hệ thống blockchain Ethereum đưa các chương trình máy tính vào các khối,
+ đại diện cho các công cụ tài chính như trái phiếu.
+ Chúng được gọi là hợp đồng thông minh (smart contract)
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hợp đồng thông minh
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+“Blockchain là một sổ cái phân tán duy trì một danh sách dữ liệu liên tục
+ phát triển các bản ghi được xác nhận bởi tất cả các nút tham gia ”.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1.1.2"
+
+\end_inset
+
+Ý tưởng ra đời của Blockchain
+\end_layout
+
+\begin_layout Standard
+Blockchain được tạo ra với ưu điểm là giải quyết được 
+\series bold
+bài toán các vị tướng Byzantine
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Byzantine
+\end_layout
+
+\end_inset
+
+
+\series default
+ (Byzantine Generals Problem) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lamport1982"
+literal "false"
+
+\end_inset
+
+.
+ Byzantine Generals Problem là một bài toán kinh điển trong khoa học máy
+ tính về đường truyền tin cậy, bộ xử lý lỗi trong một hệ phân tán.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Bài toán
+\series bold
+ các vị tướng Byzantine:
+\end_layout
+
+\begin_layout Standard
+Một binh đoàn đánh chiếm một thành phố bằng cách chia thành nhiều đạo quân
+ nhỏ vây hãm thành.
+ Do đó phải liên lạc thông qua người đưa tin bằng ngựa làm trung gian.
+ Để chiến thắng, tất cả các đạo quân phải cùng tiến công, nếu không sẽ không
+ đủ sức mạnh và dẫn đến thất bại 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lamport1982"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename byzantine.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Minh họa bài toán các vị tướng Byzantine.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Có nhiều trường hợp xảy ra, chẳng hạn: người đưa tin bị địch tóm giữa đường,
+ quân địch giả làm người đưa tin, hoặc trong số các tướng có nội gián, cố
+ ý không xuất quân cùng lúc.
+\end_layout
+
+\begin_layout Standard
+Câu hỏi đặt ra: 
+\begin_inset Quotes eld
+\end_inset
+
+Làm thế nào để có thể tin tưởng lẫn nhau mà không phụ thuộc vào một bên
+ thứ ba nào làm trung gian?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Đây là ý tưởng mở đầu cho một hệ thống Blockchain có thể giúp các bên giao
+ dịch tin tưởng nhau hơn.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:1.2"
+
+\end_inset
+
+Giới thiệu công nghệ Blockchain
+\end_layout
+
+\begin_layout Standard
+Blockchain là một công nghệ tiềm năng, những ứng dụng của nó hiện tại đã
+ và đang đem lại hiệu quả rất lớn từ kỹ thuật đến cải thiện xã hội và kinh
+ tế 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schuetz2020,YING20181"
+literal "false"
+
+\end_inset
+
+.
+ Nội dung sau đây sẽ cung cấp những thông tin cốt lõi của công nghệ này.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1.2.1"
+
+\end_inset
+
+Sổ cái phân tán
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Sổ cái phân tán
+\end_layout
+
+\end_inset
+
+ - Nền tảng của công nghệ Blockchain
+\end_layout
+
+\begin_layout Subsubsection
+Khái niệm sổ cái phân tán
+\end_layout
+
+\begin_layout Definition
+Công nghệ sổ cái phân tán
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Sổ cái phân tán
+\end_layout
+
+\end_inset
+
+ (Distributed Ledger Technology - DLT) là thuật ngữ đề cập đến cơ sở hạ
+ tầng công nghệ sử dụng máy tính độc lập - gọi là nút để ghi chép, chia
+ sẻ và đồng bộ hóa các giao dịch trong sổ cái điện tử, thay vì lưu trữ dữ
+ liệu tập trung như trong sổ cái truyền thống 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Olnes2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/ThinhNguyenCong/Desktop/Project2/DLT.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mô hình mạng công nghệ sổ cái phân tán
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DLT có tất cả các nút
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Nút
+\end_layout
+
+\end_inset
+
+ được kết nối với nhau, mỗi nút có một bản sao của sổ cái phân tán.
+ Thuật ngữ 
+\begin_inset Quotes eld
+\end_inset
+
+đồng thuận
+\begin_inset Quotes erd
+\end_inset
+
+ ở trung tâm của mạng thể hiện cơ chế đồng thuận trong đó các nút đồng ý
+ về các giao dịch mới và việc cập nhật sổ cái.
+ DLT dùng thuật toán để mã hóa dữ liệu, đảm bảo chỉ người có quyền tham
+ gia mới được sử dụng dữ liệu
+\end_layout
+
+\begin_layout Standard
+DLT có khả năng hỗ trợ xử lí các hợp đồng thông minh (smart contracts) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bartoletti2017"
+literal "false"
+
+\end_inset
+
+, các chương trình máy tính tự thực hiện dựa trên các điều khoản và điều
+ kiện được qui định trước bởi các bên tham gia hợp đồng.
+\end_layout
+
+\begin_layout Subsubsection
+Ứng dụng của sổ cái phân tán
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Tiền điện tử
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Tiền điện tử
+\end_layout
+
+\end_inset
+
+ (Cryptocurrencies)
+\series default
+: là loại tiền không tồn tại dưới dạng tiền mặt, cho phép thực hiện giao
+ dịch mà không cần các bên trung gian (ví dụ: ngân hàng,...), được phát hành
+ bởi các cá nhân, công ty và tổ chức.
+ Tiền mã hóa không được chính phủ công nhận.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Token hóa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Token hóa
+\end_layout
+
+\end_inset
+
+ (Tokenization)
+\series default
+: là quá trình thể hiện quyền sở hữu tài sản vật chất trên sổ cái phân tán,
+ DLT sẽ tạo một bản ghi kĩ thuật số duy nhất để xác minh quyền sở hữu và
+ tính xác thực, bao gồm tất cả hoạt động trong quá khứ.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Bù trừ và thanh toán giao dịch chứng khoán (Post-trade clearing and settlement)
+\series default
+: cung cấp thông tin có độ trễ về thời gian rất nhỏ, do đó giảm độ phức
+ tạp, giảm thời gian và chi phí liên quan đến xử lý giao dịch; đồng thời,
+ loại bỏ gần như hoàn toàn sự trùng lặp thông tin ghi chép giữa các bên,
+ giảm thiểu rủi ro, tăng tính thanh khoản của tài sản và tiền.
+\end_layout
+
+\begin_layout Subsubsection
+Những khó khăn khi triển khai công nghệ sổ cái phân tán tại Việt Nam
+\end_layout
+
+\begin_layout Standard
+Chưa có một bộ khung pháp lý rõ ràng để triển khai công nghệ vào các hệ
+ thống lớn tại Việt Nam.
+ Việc tích hợp công nghệ này vào các hệ thống cũ gặp khó khăn do phần lớn
+ các hệ thống hiện nay vẫn sử dụng mô hình quản lý dữ liệu tập trung\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+Để duy trì hệ thống đòi hỏi một lượng lớn máy tính, do đó, chi phí điện,
+ duy trì và bảo dưỡng hệ thống khá cao.
+\end_layout
+
+\begin_layout Subsection
+Định nghĩa Blockchain
+\end_layout
+
+\begin_layout Definition
+Blockchain là một sổ cái phân tán bất biến, dữ liệu sau khi nhập vào sẽ
+ được đóng gói thành các khối (block), được nối chuỗi với nhau bằng cách
+ sử dụng các hàm băm và không thể bị đảo ngược 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019,Pierro2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Bản chất của việc liên kết trong blockchain: liên kết giữa hàm băm của khối
+ hiện tại và hàm băm của khối trước đó, giải thích ý nghĩa của chuỗi khối
+ được liên kết bằng mật mã thông qua các hàm băm này.
+ Nếu ai đó giả mạo dữ liệu, giá trị của hàm băm này sẽ bị thay đổi và kết
+ quả là chuỗi không hợp lệ.
+ Các loại thông tin khác nhau có thể được lưu trữ trên blockchain nhưng
+ việc sử dụng phổ biến nhất cho đến nay là sổ cái cho các giao dịch.
+\end_layout
+
+\begin_layout Standard
+Có nhiều khái niệm có liên quan đến blockchain, chẳng hạn như: mạng ngang
+ hàng phân tán
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mạng ngang hàng phân tán
+\end_layout
+
+\end_inset
+
+ (distributed peer-to-peer network) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LI2018133,Yli-Huumo2016"
+literal "false"
+
+\end_inset
+
+, sổ cái đồng thuận (consensus ledgers), hàm băm mật mã (cryptographic hashes)
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BAUSPIESS1992427"
+literal "false"
+
+\end_inset
+
+,...
+\end_layout
+
+\begin_layout Paragraph
+Điểm khác biệt của Blockchain và sổ cái phân tán (Distributed Ledger)
+\end_layout
+
+\begin_layout Standard
+Mặc dù bản thân blockchain cũng được biết đến như là một sổ cái phân tán,
+ nhưng giữa chúng vẫn có sự khác biệt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1.1"
+
+\end_inset
+
+So sánh công nghệ sổ cái phân tán và công nghệ blockchain
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="3cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Sổ cái phân tán
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Blockchain
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Công nghệ
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="5cm" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Công nghệ gốc
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Một nhánh của sổ cái phân tán
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tính công khai
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thường không công khai.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bất kỳ ai cũng có thể sử dụng.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hạn chế những người có thể sử dụng và truy cập.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bất cứ ai cũng có thể đóng vai trò là nút xác thực.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hạn chế những người có thể hoạt động như một nút (Trong nhiều trường hợp,
+ các quyết định quản trị giao cho một cơ quan tập trung duy nhất)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khi trở thành nút đều có thể hành động như một phần của cơ chế quản trị
+ của blockchain đó.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cấu trúc dữ liệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Không yêu cầu dạng khối
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chuỗi khối dữ liệu liên kết chặt chẽ
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cơ chế đồng thuận
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Không yêu cầu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sử dụng các cơ chế đồng thuận để tạo niềm tin
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khả năng mở rộng
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gần như vô hạn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giới hạn bởi năng lực của hệ thống
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hàm băm
+\end_layout
+
+\begin_layout Subsubsection
+Sơ lược về hàm băm
+\end_layout
+
+\begin_layout Definition
+Hàm băm
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hàm băm
+\end_layout
+
+\end_inset
+
+ (hash function) là giải thuật nhằm sinh ra các giá trị băm (hash value)
+ tương ứng với một khối dữ liệu (có thể là một chuỗi ký tự, một đối tượng,...).
+ Giá trị băm
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Giá trị băm
+\end_layout
+
+\end_inset
+
+ này đóng vai trò như một khóa để phân biệt các khối dữ liệu, tuy nhiên,
+ hiện tượng trùng khóa (hay còn gọi là đụng độ) vẫn có thể xảy ra và mục
+ tiêu hướng tới là cải tiến giải thuật hàm băm để giảm thiểu đụng độ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pierro2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hàm băm thường được sử dụng trong bảng băm
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Bảng băm
+\end_layout
+
+\end_inset
+
+ nhằm giảm chi phí tính toán khi tìm một khối dữ liệu trong một tập hợp.
+ Đa số các ngôn ngữ lập trình ngày nay đều cung cấp thư viện ứng dụng bảng
+ băm dưới các dạng: tập hợp (collection), danh sách (list), bảng (table),
+ ánh xạ (mapping), từ điển (dictionary),...
+ 
+\end_layout
+
+\begin_layout Standard
+Hàm băm là viết tắt của dấu vân tay kỹ thuật số của một lượng dữ liệu nằm
+ trong khối.
+ Hàm băm được sử dụng để ánh xạ dữ liệu với kích thước tùy ý thành các giá
+ trị băm có kích thước cố định.
+\end_layout
+
+\begin_layout Standard
+Một hàm băm được đánh giá hiệu quả khi nó thỏa mãn các điều kiện như: khả
+ năng tính toán nhanh; các khóa được phân bố đều trong bảng băm; ít xảy
+ ra đụng độ và xử lý được các khóa có kiểu dữ liệu khác nhau.
+\end_layout
+
+\begin_layout Subsubsection
+Đặc trưng của hàm băm
+\end_layout
+
+\begin_layout Standard
+Hàm băm có những đặc trưng như sau:
+\end_layout
+
+\begin_layout Itemize
+Tính xác định, nghĩa là dữ liệu đầu vào giống nhau thì có cùng giá trị của
+ hàm băm
+\end_layout
+
+\begin_layout Itemize
+Tốc độ tính toán nhanh
+\end_layout
+
+\begin_layout Itemize
+Không thể tạo lại dữ liệu, tức là từ một giá trị băm không thể tái tạo lại
+ dữ liệu ban đầu.
+\end_layout
+
+\begin_layout Itemize
+Tính không tương quan, chỉ cần thay đổi một chút về dữ liệu đầu vào cũng
+ gây ra sự thay đổi đáng kể về giá trị hàm băm.
+\end_layout
+
+\begin_layout Subsubsection
+Ứng dụng
+\end_layout
+
+\begin_layout Standard
+Hàm băm mật mã
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hàm băm mật mã
+\end_layout
+
+\end_inset
+
+ (cryptographic hash function) là một hàm băm một chiều 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BAUSPIESS1992427,Sobti2012"
+literal "false"
+
+\end_inset
+
+, tức là không có phương pháp thực tiễn nào để tìm ra bộ dữ liệu ứng với
+ một giá trị băm đã biết và việc tấn công vào hàm băm để lấy dữ liệu là
+ không thể.
+\end_layout
+
+\begin_layout Standard
+Bảng băm cũng là một ứng dụng quan trọng và phổ biến trong thực tế, cho
+ phép tra cứu nhanh một bản ghi dữ liệu nếu cho trước khóa của bản ghi đó
+ (các khóa trong trường hợp này không phải là một chiều như hàm băm mật
+ mã).
+ 
+\end_layout
+
+\begin_layout Standard
+Thuật toán phổ biến được sử dụng để mã hóa bất kỳ nguồn dữ liệu kỹ thuật
+ số nào là hàm băm SHA256 ( Secure Hash Algorithm 256 bits)
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+SHA256
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MARTINO2020100254"
+literal "false"
+
+\end_inset
+
+.
+ Đặc điểm của SHA256 có : giải mã một chiều, tính xác định, tính toán nhanh,
+ tính không tương quan , và chịu được đụng độ
+\end_layout
+
+\begin_layout Subsubsection
+Ý nghĩa của hàm băm đối với công nghệ Blockchain
+\end_layout
+
+\begin_layout Standard
+Quá trình xác nhận giao dịch dựa trên dữ liệu được mã hóa bằng thuật toán
+ băm.
+ Giá trị băm là một chuỗi các số và chữ cái không giống với dữ liệu gốc.
+ Hàm băm xử lý dữ liệu từ một khối thông qua hàm toán học, kết quả đầu ra
+ có độ dài cố định.
+ 
+\end_layout
+
+\begin_layout Standard
+Việc giải quyết các hàm băm để mã hóa các khối mới đòi hỏi sức mạnh tính
+ toán đáng kể.
+ Giải quyết hàm băm về cơ bản là giải quyết một vấn đề toán học phức tạp
+ và bắt đầu với dữ liệu có sẵn trong tiêu đề khối.
+ Nếu giải quyết được hàm băm thì nó được chấp nhận làm giải pháp, và khối
+ được thêm vào blockchain.
+\end_layout
+
+\begin_layout Subsection
+Đơn vị cấu thành blockchain - khối (block)
+\end_layout
+
+\begin_layout Definition
+Một khối
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+block
+\end_layout
+
+\end_inset
+
+ (block) là một bản ghi gồm dữ liệu bên trong nó, đồng thời chứa giá trị
+ băm của khối trước đó và giá trị băm của chính nó 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lý do sử dụng thuật toán băm là vì hàm băm là hàm một chiều nên các kỹ thuật
+ dịch ngược không khả dụng, do đó, việc bẻ khóa nó là hoàn toàn không thể.
+\end_layout
+
+\begin_layout Standard
+Blockchain là một sổ cái kỹ thuật số bất biến, bất cứ ai cố tình thay đổi
+ dữ liệu của một khối sẽ làm thay đổi giá trị băm của khối này.
+ Việc này dẫn đến liên kết giữa khối với khối tiếp theo bị phá vỡ, khiến
+ tất cả các khối sau đó sẽ không còn hợp lệ.
+ Do đó, dữ liệu sau khi nhập vào thì không thể thay đổi.
+\end_layout
+
+\begin_layout Standard
+Trong trường hợp liên kết mật mã bị phá vỡ và gây ra lỗi lưu trữ dữ liệu
+ như trên, vấn đề khôi phục lại hệ thống được giải quyết thông qua việc
+ triển khai hệ thống mạng ngang hàng phân tán
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mạng ngang hàng phân tán
+\end_layout
+
+\end_inset
+
+ (P2P
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+P2P
+\end_layout
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LI2018133,Yli-Huumo2016"
+literal "false"
+
+\end_inset
+
+.
+ Đây là một thành phần quan trọng của công nghệ blockchain và là một cải
+ tiến đáng kể trong công nghệ lưu trữ dữ liệu so với các công nghệ lưu trữ
+ tập trung truyền thống.
+\end_layout
+
+\begin_layout Paragraph
+Các thành phần cơ bản của một khối 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto,Pierro2017"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Mã số khối
+\end_layout
+
+\begin_layout Itemize
+Giá trị của hàm băm của khối trước đó (Previous block's hash value)
+\end_layout
+
+\begin_layout Itemize
+Dữ liệu được đóng gói trong khối (Data)
+\end_layout
+
+\begin_layout Itemize
+Hàm băm của khối hiện tại (Own hash)
+\end_layout
+
+\begin_layout Standard
+Ngoài ra, còn một thành phần khác là nonce
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Nonce
+\end_layout
+
+\end_inset
+
+ (number used only once - số chỉ dùng một lần), cung cấp khả năng kiểm soát
+ bổ sung và tính linh hoạt giúp xác định chính xác giá trị của hàm băm.
+\end_layout
+
+\begin_layout Standard
+Đầu vào của một hàm băm gồm các thành phần: mã số khối, giá trị hàm băm
+ khối trước, dữ liệu, và nonce 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Quy trình của Blockchain
+\end_layout
+
+\begin_layout Subsubsection
+Lược đồ chung
+\end_layout
+
+\begin_layout Standard
+Một giao dịch trong mạng blockchain để thực hiện thành công phải trải qua
+ 6 bước, trong đó:
+\end_layout
+
+\begin_layout Itemize
+Bước 1: 
+\series bold
+Khởi tạo
+\series default
+ - Các bên tham gia giao dịch, chi tiết thông tin giao dịch được ghi lại.
+\end_layout
+
+\begin_layout Itemize
+Bước 2: 
+\series bold
+Xây dựng khối
+\series default
+ - Một hoặc nhiều giao dịch được đóng gói chung vào trong một khối.
+\end_layout
+
+\begin_layout Itemize
+Bước 3: 
+\series bold
+Quảng bá
+\series default
+ - Khối được tạo sẽ được gửi đến cho tất cả thành viên trong mạng.
+\end_layout
+
+\begin_layout Itemize
+Bước 4: 
+\series bold
+Đồng thuận
+\series default
+ - Các nút hợp pháp trên mạng tiến hành xác thực giao dịch trên khối bằng
+ cách khai thác khối này dựa trên cơ chế đồng thuận.
+\end_layout
+
+\begin_layout Itemize
+Bước 5: 
+\series bold
+Lưu trữ
+\series default
+ - Khối sau khi được xác thực sẽ được nối chuỗi và lưu trữ vào sổ cái phân
+ tán blockchain.
+\end_layout
+
+\begin_layout Itemize
+Bước 6: 
+\series bold
+Thông báo
+\series default
+ - Giao dịch được thực hiện, các bên liên quan sẽ được nhận thông báo về
+ giao dịch.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename blockchain.png
+	scale 38
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lược đồ về quy trình giao dịch trong mạng blockchain
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Để minh họa một quá trình giao dịch trên mạng, ta xét ví dụ về một giao
+ dịch Bitcoin
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Bitcoin
+\end_layout
+
+\end_inset
+
+: Giả sử có ba khối, mỗi khối đăng ký hai giao dịch.
+ Khi được nối với nhau thì thuộc tính giá trị băm của khối trước sẽ được
+ khối sau lưu lại tạo thành một chuỗi như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:1.2.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bl2.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.3"
+
+\end_inset
+
+Minh họa quá trình giao dịch trên mạng.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Bất kỳ một thay đổi nào về dữ liệu của khối sẽ khiến giá trị băm thay đổi,
+ làm đứt liên kết với khối phía sau (như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:1.2.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Khi đó, cảnh báo sẽ được phát đi tới các nút khác trong mạng, đồng thời,
+ trạng thái trước đó của khối được cập nhật lại dựa trên bản sao dữ liệu
+ tại mỗi nút.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename bl3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.4"
+
+\end_inset
+
+Trường hợp giá trị hàm băm thay đổi làm đứt liên kết.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Vì vậy, việc xác thực khối bản chất là việc xác định giá trị băm của khối
+ bằng việc giải thuật toán băm SHA256 dựa trên hệ thống máy tính có khả
+ năng tính toán lớn.
+ Các khối sẽ được nối chuỗi nếu tìm ra được giá trị băm, khi đó, các bên
+ tham gia giao dịch sẽ nhận được thông báo về giao dịch, chẳng hạn như ở
+ giao dịch T1, A sẽ bị trừ 100 BTC và B nhận được 100 BTC.
+\end_layout
+
+\begin_layout Subsubsection
+Tính bảo mật của blockchain
+\end_layout
+
+\begin_layout Standard
+Blockchain duy trì được tính bảo mật nhờ các cơ chế và kỹ thuật khác nhau:
+\end_layout
+
+\begin_layout Itemize
+Hệ thống phân tán: các bản ghi dữ liệu được sao lưu và đồng bộ trên tất
+ cả các nút trong mạng giúp hạn chế việc dữ liệu bị giả mạo và đảm bảo tính
+ hồi phục của hệ thống 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abeyratne2016,Nakamoto,Pierro2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Mã hóa: dữ liệu mỗi khối được mã hóa bằng hàm băm, đóng vai trò đảm bảo
+ tính bảo mật và tính bất biến của blockchain 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto,Pierro2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kinh tế học mã hóa (Cryptoeconomics)
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Cryptoeconomics
+\end_layout
+
+\end_inset
+
+: xây dựng dựa trên lý thuyết trò chơi, sử dụng các nguyên lý kinh tế nhằm
+ khuyến khích các nút trung thực hơn là thực hiện các hành vi độc hại hoặc
+ gây lỗi.
+ Các nút không trung thực sẽ bị trục xuất khỏi mạng blockchain, trong khi
+ các nút đào trung thực có khả năng nhận được phần thưởng khối đáng kể.
+\end_layout
+
+\begin_layout Itemize
+Hệ thống chịu lỗi Byzantine (Byzantine Fault Tolerance - BFT
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BFT
+\end_layout
+
+\end_inset
+
+): cho phép một mạng lưới phân tán đạt được sự đồng thuận ngay cả khi một
+ số nút trong mạng bị lỗi, bằng cách ra quyết định tập thể (bao gồm cả nút
+ bình thường và nút bị lỗi) nhằm giảm ảnh hưởng của các nút bị lỗi 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NASREEN201650"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Các cơ chế đồng thuận
+\end_layout
+
+\begin_layout Subsubsection
+Bằng chứng công việc (Proof of Work - PoW
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+PoW
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Definition
+PoW là cơ chế nhằm ngăn chặn việc sử dụng năng lực điện toán độc hại như
+ gửi email spam hoặc phát động các cuộc tấn công từ chối dịch vụ (DoS -
+ Denial Of Service) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Bản chất của cơ chế này là các nút đặc biệt (gọi là các thợ mỏ) cạnh tranh
+ việc xác thực giao dịch (được đóng thành khối) để nhận phần thưởng.
+ Họ thực hiện bằng cách sử dụng năng lực tính toán của hệ thống máy tính
+ giải một câu đố chuyên sâu về tính toán (dễ xác minh) tìm ra số nonce,
+ tìm ra được nonce tức là khai thác thành công khối đó.
+\end_layout
+
+\begin_layout Standard
+Cơ chế PoW tạo ra nhằm mục đích kiểm soát công việc, đảm bảo rằng các khối
+ mới không được tạo ra quá nhanh.
+ PoW áp đặt một số giới hạn về hành động trong mạng.
+ Nếu muốn tấn công vào mạng đòi hỏi rất nhiều sức mạnh tính toán và rất
+ nhiều thời gian để thực hiện các tính toán.
+ Do đó, các cuộc tấn công trên lý thuyết vẫn có thể xảy ra nhưng chi phí
+ quá cao.
+ Đây chính là ưu điểm lớn nhất của PoW.
+\end_layout
+
+\begin_layout Standard
+PoW có khả năng ngăn chặn chi tiêu kép 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019,Brown2020"
+literal "false"
+
+\end_inset
+
+, được hầu hết các loại tiền mã hóa sử dụng như là thuật toán đồng thuận
+ của chúng, được dùng như một phương pháp để bảo mật cho sổ cái của tiền
+ mã hóa.
+ Cơ chế này phổ biến trong Bitcoin
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Bitcoin
+\end_layout
+
+\end_inset
+
+, Ethereum
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Ethereum
+\end_layout
+
+\end_inset
+
+, và hầu hết các loại tiền mã hóa khác.
+\end_layout
+
+\begin_layout Paragraph
+Cơ chế hoạt động như sau:
+\end_layout
+
+\begin_layout Itemize
+Các thợ mỏ giải quyết các câu đố, hình thành các khối mới và xác nhận các
+ giao dịch.
+ Băm của mỗi khối chứa băm của khối trước đó, làm tăng bảo mật và ngăn chặn
+ bất kỳ vi phạm khối nào.
+ Bất kỳ khối nào bao gồm một giao dịch không hợp lệ sẽ bị mạng tự động từ
+ chối.
+\end_layout
+
+\begin_layout Itemize
+Sau khi khối mới được hình thành thì các giao dịch trong khối này được coi
+ là đã xác nhận.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PoW.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mô hình cơ chế hoạt động của PoW 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Rào cản trong thực tiễn:
+\end_layout
+
+\begin_layout Itemize
+Khả năng tiếp cận: đòi hỏi một lượng năng lượng đáng kể để duy trì, đồng
+ thời phải mua, thiết lập và duy trì tất cả các phần cứng cần thiết để chạy
+ hệ thống máy tính khai thác PoW.
+\end_layout
+
+\begin_layout Itemize
+Tập trung: tập trung thành hai loại: các tập đoàn khai thác mỏ lớn hoạt
+ động trong các khu vực có chi phí điện thấp và thời tiết lạnh (để giảm
+ chi phí làm mát phần cứng khai thác) và các hồ khai thác mỏ.
+\end_layout
+
+\begin_layout Itemize
+Khả năng mở rộng: khả năng mở rộng của mạng lưới bị giới hạn do phụ thuộc
+ tốc độ khai thác khối.
+\end_layout
+
+\begin_layout Subsubsection
+Bằng chứng cổ phần (Proof of Stake - PoS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+PoS
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Definition
+PoS là cơ chế đồng thuận trong đó các nút của mạng blockchain phải cược
+ một phần tài sản để được tham gia vào quá trình xác nhận các giao dịch
+ trong một khối.
+ Các nút tham gia được gọi là người xác thực (validator).
+ Số tiền đặt cược được gọi là cổ phần (stake).
+ Số tiền này sẽ bị hệ thống khóa lại, cho đến khi nút đó rút khỏi công việc
+ xác thực 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Người xác thực được chọn ngẫu nhiên từ tập những người cược tiền.
+ Nếu khối hợp lệ, nút tham gia xác thực sẽ nhận được phần thưởng là các
+ khoản phí giao dịch, thường giao động từ 
+\begin_inset Formula $10-15\%$
+\end_inset
+
+ tiền cược.
+ Chính vì vậy, cược càng nhiều thì phần thưởng càng lớn.
+\end_layout
+
+\begin_layout Paragraph
+Cách thức chọn người xác nhận
+\end_layout
+
+\begin_layout Standard
+Người dùng khóa một số tiền nhất định vào mạng làm cổ phần.
+ Số lượng cổ phần càng lớn, thì cơ hội được chọn làm người xác thực khối
+ kế tiếp càng lớn.
+ Để tránh việc quá trình chỉ ưu tiên cho các nút giàu nhất trong mạng, hai
+ phương pháp được sử dụng phổ biến nhất là:
+\end_layout
+
+\begin_layout Itemize
+Lựa chọn khối ngẫu nhiên: tìm kiếm các nút có giá trị băm thấp nhất kết
+ hợp với cổ phần lớn nhất.
+ Vì độ lớn của cổ phần được công khai, nên có thể dự đoán người được chọn
+ làm người xác thực kế tiếp.
+\end_layout
+
+\begin_layout Itemize
+Lựa chọn độ tuổi tài sản: các nút được chọn dựa trên thời gian mà các token
+ của họ đã được lưu giữ làm cổ phần gọi là độ tuổi tài sản.
+ Độ tuổi của tài sản phải không dưới 30 ngày mới được xét chọn làm người
+ xác thực.
+\end_layout
+
+\begin_layout Paragraph
+Hiệu quả bảo mật:
+\end_layout
+
+\begin_layout Standard
+Người xác thực có thể phê duyệt một giao dịch gian lận, tuy nhiên, người
+ đó sẽ mất một phần trong cổ phần và không được làm người xác thực trong
+ tương lai.
+ Vì vậy, khi cổ phần cao hơn phần thưởng, nếu gian lận thì người xác thực
+ sẽ mất nhiều hơn số tiền thu lại được.
+\end_layout
+
+\begin_layout Standard
+PoS giải quyết ba vấn đề của chuỗi PoW được thảo luận trước đó:
+\end_layout
+
+\begin_layout Itemize
+Khả năng truy cập: không cần dùng nhiều năng lực tính toán, tuy nhiên, lại
+ yêu cầu người xác thực phải đặt cược cổ phần với một lượng khá đáng kể.
+\end_layout
+
+\begin_layout Itemize
+Tập trung hoá: việc chọn người xác thực không phụ thuộc vào số nút người
+ đó kiểm soát, mà chỉ phụ thuộc vào số cổ phần người đó đang sở hữu hay
+ độ tuổi của tài sản.
+\end_layout
+
+\begin_layout Itemize
+Khả năng mở rộng: cho phép mở rộng bằng phương pháp sharding
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Sharding
+\end_layout
+
+\end_inset
+
+ (phân mảnh) mà không làm giảm bảo mật.
+\end_layout
+
+\begin_layout Standard
+PoS phổ biến trong Decred, Peercoin, Ethereum và trong tương lai là nhiều
+ loại tiền mã hoá khác.
+ Phân cấp hơn, tiêu hao ít năng lượng và không dễ gì bị đe doạ.
+\end_layout
+
+\begin_layout Subsubsection
+Bằng chứng cổ phần ủy quyền (Delegated Proof of Stake - DPoS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+DPoS
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Definition
+DPoS là một cơ chế đồng thuận thay thế, đòi hỏi các cổ đông phải bỏ phiếu
+ cho các "đại biểu", những người này sau đó chịu trách nhiệm xác nhận các
+ giao dịch và duy trì chuỗi khối 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Những người nắm giữ tài sản sẽ bỏ phiếu cho một nhóm đại biểu được chọn
+ để thực hiện vai trò xác nhận các giao dịch.
+ Quyền biểu quyết nhiều hay ít phụ thuộc số lượng tài sản mà người đó năm
+ giữ.
+ 
+\end_layout
+
+\begin_layout Standard
+Nó có thể được coi là giao thức đồng thuận ít tập trung nhất trong số các
+ giao thức, cũng như có tính bao quát nhất.
+ Một đại biểu thể hiện cam kết bằng cách cược tiền vào hệ thống (tài sản
+ này sẽ bị tịch thu trong trường hợp người này thực hiện các hành vi gây
+ hại cho hệ thống).
+ Vai trò của các đại biểu: đảm bảo hoạt động của nút, xác thực giao dịch,
+ chia phần thưởng cho cử tri.
+\end_layout
+
+\begin_layout Standard
+Về bản chất, một mạng lưới DPoS được tự quản lí và điều chỉnh bởi tất cả
+ những người tham gia của nó, việc đảm bảo lợi ích tốt nhất cho mạng vẫn
+ là ưu tiên hàng đầu.
+ DPoS được sử dụng ở nhiều đồng tiền mới sau này có thể kể đến như: Bitshares,
+ EOS, LISH, ICON, Cybermiles,...
+\end_layout
+
+\begin_layout Subsubsection
+Bằng chứng ủy nhiệm (Proof of Authority - PoA
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+PoA
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Definition
+PoA là một thuật toán đồng thuận dựa trên danh tiếng, trong đó những người
+ xác thực khối được chọn không dựa trên số lượng tài sản mà dựa trên chính
+ danh tiếng của mình 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Người xác thực là là những người điều tiết của hệ thống được chọn dựa trên
+ danh tiếng của họ.
+\end_layout
+
+\begin_layout Standard
+Mô hình PoA có số lượng người xác thực khối giới hạn, phù hợp hơn cho các
+ mạng blockchain riêng tư vì hiệu suất làm việc của nó cao hơn rất nhiều
+ các hệ thống khác, đồng thời nó đề cao danh tính của người dùng thay vì
+ số cổ phần của người dùng.
+\end_layout
+
+\begin_layout Standard
+Các điều kiện cho đồng thuận PoA:
+\end_layout
+
+\begin_layout Itemize
+Danh tính hợp lệ và đáng tin cậy: người xác thực cần xác nhận danh tính
+ thực của mình.
+\end_layout
+
+\begin_layout Itemize
+Khó khăn để trở thành người xác thực: ứng viên phải sẵn sàng đầu tư tiền
+ và chấp nhận rủi ro với danh tiếng của mình.
+\end_layout
+
+\begin_layout Standard
+Hạn chế của hệ thống PoA là danh tính của những người xác thực được công
+ khai, việc này có thể tạo cơ hội cho các bên thứ ba khai thác.
+\end_layout
+
+\begin_layout Standard
+Đây là mô hình tập trung thường thấy trong POA.Network, Ethereum Kovan Testnet
+ với đặc điểm là hiệu suất cao, có khả năng mở rộng tốt.
+\end_layout
+
+\begin_layout Subsection
+Phân loại Blockchain
+\end_layout
+
+\begin_layout Standard
+Nhu cầu cơ bản nhất hoặc ứng dụng của blockchain là thực hiện các giao dịch
+ hoặc trao đổi thông tin thông qua một mạng an toàn.
+ Tuy nhiên, có nhiều cách khác nhau để thiết lập mạng blockchain tùy thuộc
+ vào việc sử dụng và yêu cầu.
+\end_layout
+
+\begin_layout Standard
+Có chủ yếu là hai loại blockchain: Blockchain công khai (Public Blockchain)
+ và Blockchain riêng tư (Private Blockchain).
+ Tuy nhiên, cũng có một số biến thể, như Blockchain kết hợp (Consortium
+ Blockchain) và Blockchain lai (Hybrid Blockchain).
+\end_layout
+
+\begin_layout Subsubsection
+Blockchain công khai
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Public Blockchain
+\end_layout
+
+\end_inset
+
+ (Permissionless Blockchain - Không phân quyền)
+\end_layout
+
+\begin_layout Definition
+Blockchain công khai (Public Blockchain) là một hệ thống sổ cái phân tán
+ không hạn chế, không phân quyền.
+ Bất kỳ ai truy cập Internet đều có thể đăng nhập vào nền tảng blockchain
+ để trở thành một nút của mạng blockchain.
+ Một nút hoặc người dùng là một phần của blockchain công khai được phép
+ truy cập các bản ghi hiện tại và quá khứ, xác minh các giao dịch hoặc làm
+ bằng chứng công việc (PoW) cho một khối và thực hiện khai thác.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename public_bl.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.6"
+
+\end_inset
+
+Minh họa mô hình mạng Blockchain công khai.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Ưu điểm:
+\end_layout
+
+\begin_layout Itemize
+An toàn, đáng tin cậy.
+\end_layout
+
+\begin_layout Itemize
+Cởi mở và minh bạch: blockchain công khai được mở và minh bạch dữ liệu cho
+ tất cả các nút tham gia.
+\end_layout
+
+\begin_layout Paragraph
+Nhược điểm:
+\end_layout
+
+\begin_layout Itemize
+Tỷ lệ giao dịch mỗi giây (Transactions per second - TPS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+TPS
+\end_layout
+
+\end_inset
+
+) trong một blockchain công khai là rất thấp.
+\end_layout
+
+\begin_layout Itemize
+Các vấn đề về khả năng mở rộng: do tốc độ xử lý và hoàn thành giao dịch
+ chậm nên khó mở rộng.
+\end_layout
+
+\begin_layout Itemize
+Tiêu thụ năng lượng cao.
+\end_layout
+
+\begin_layout Standard
+Ví dụ: Bitcoin, Ethereum, Litecoin,...
+\end_layout
+
+\begin_layout Subsubsection
+Blockchain riêng tư
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Private Blockchain
+\end_layout
+
+\end_inset
+
+ (Permissioned Blockchain - Phân quyền)
+\end_layout
+
+\begin_layout Definition
+Blockchain riêng tư (Private Blockchain) là một blockchain hạn chế hoặc
+ chỉ hoạt động trong một mạng khép kín.
+ Các blockchain riêng tư thường được sử dụng trong một tổ chức hoặc doanh
+ nghiệp mà chỉ có các thành viên được chọn là những người tham gia vào một
+ mạng lưới blockchain (như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:1.2.7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Definition
+Mức độ bảo mật, ủy quyền, quyền, khả năng tiếp cận nằm trong tay của tổ
+ chức kiểm soát.
+ Do đó, các blockchain riêng tư cũng tương tự được sử dụng như một blockchain
+ công cộng nhưng có một mạng lưới nhỏ và hạn chế.
+ Các mạng blockchain riêng tư được triển khai để bỏ phiếu, quản lý chuỗi
+ cung ứng, nhận dạng kỹ thuật số, sở hữu tài sản, v.v.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename private_bl.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.7"
+
+\end_inset
+
+Minh họa mô hình mạng Blockchain riêng tư.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Ưu điểm:
+\end_layout
+
+\begin_layout Itemize
+TPS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+TPS
+\end_layout
+
+\end_inset
+
+ cao: các blockchain riêng tư có thể tạo điều kiện thuận lợi cho các giao
+ dịch với tốc độ lên đến hàng ngàn hoặc hàng trăm nghìn TPS cùng một lúc.
+\end_layout
+
+\begin_layout Itemize
+Khả năng mở rộng: có thể chọn kích thước của blockchain riêng tư tùy theo
+ nhu cầu của mạng.
+\end_layout
+
+\begin_layout Paragraph
+Nhược điểm:
+\end_layout
+
+\begin_layout Itemize
+Tập trung: một hệ thống quản lý truy cập có quyền giám sát toàn bộ hệ thống.
+\end_layout
+
+\begin_layout Itemize
+Bảo mật thấp: do có số lượng nút hoặc người tham gia ít, dễ bị tấn công.
+\end_layout
+
+\begin_layout Subsubsection
+Blockchain kết hợp (Consortium Blockchain)
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Consortium Blockchain
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Blockchain kết hợp là một loại mạng bán phi tập trung, một biến thể của
+ Blockchain riêng tư, trong đó, sẽ có nhiều tổ chức cùng quản lý một mạng
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alsunaidi2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Cách tổ chức quản lý trong mạng này trái ngược với những gì chúng ta đã
+ thấy trong một Blockchain riêng tư, được quản lý bởi chỉ một tổ chức duy
+ nhất.
+ Nhiều tổ chức có thể hoạt động như một nút trong loại blockchain này và
+ trao đổi thông tin hoặc khai thác.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:1.2.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ minh họa một mạng Blockchain kết hợp.
+\end_layout
+
+\begin_layout Standard
+Thường được sử dụng bởi các ngân hàng, tổ chức chính phủ, v.v.
+ 
+\end_layout
+
+\begin_layout Standard
+Một số ví dụ về hệ thống trên thực tế: Energy Web Foundation, R3, v.v.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename consortium_bl.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.8"
+
+\end_inset
+
+Minh họa mô hình mạng Blockchain kết hợp.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Blockchain lai (Hybrid Blockchain) 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hybrid Blockchain
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Blockchain lai là sự kết hợp nhằm sử dụng ưu điểm của cả hai giải pháp Blockchai
+n công khai và Blockchain riêng tư.
+ Nó sử dụng các tính năng của cả hai loại blockchain, tức là cho phép một
+ hệ thống sẽ có quyền truy cập và quyền tự do được kiểm soát cùng một lúc.
+ Người dùng có thể kiểm soát ai có quyền truy cập vào dữ liệu được lưu trữ
+ trong blockchain.
+ Chỉ một phần dữ liệu hoặc hồ sơ được chọn từ blockchain mới có thể được
+ phép công khai giữ bí mật phần còn lại trong mạng riêng (xem 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:1.2.9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hybrid_bl.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1.2.9"
+
+\end_inset
+
+Minh họa mô hình mạng Blockchain lai.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Lợi ích của Blockchain lai
+\end_layout
+
+\begin_layout Itemize
+Tạo ra một hệ sinh thái khép kín trong doanh nghiệp.
+\end_layout
+
+\begin_layout Itemize
+Bảo vệ quyền riêng tư trong khi vẫn kết nối với thế giới bên ngoài.
+\end_layout
+
+\begin_layout Itemize
+Chi phí giao dịch thấp.
+\end_layout
+
+\begin_layout Standard
+Ví dụ về hệ thống sử dụng Blockchain lai: Dragonchain.
+\end_layout
+
+\begin_layout Subsection
+Hợp đồng thông minh (Smart Constract)
+\end_layout
+
+\begin_layout Standard
+Năm 1998, nhà khoa học máy tính Nick Szabo công bố làm việc trên 
+\begin_inset Quotes eld
+\end_inset
+
+bit vàng
+\begin_inset Quotes erd
+\end_inset
+
+, một loại tiền tệ kỹ thuật số phi tập trung.
+ Đồng thời, ông cũng lần đầu tiên phát biểu khái niệm về hợp đồng thông
+ minh.
+ 
+\end_layout
+
+\begin_layout Definition
+Hợp đồng thông minh
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hợp đồng thông minh
+\end_layout
+
+\end_inset
+
+ là một thuật ngữ mô tả một bộ giao thức đặc biệt có khả năng tự động thực
+ hiện các điều khoản, các thoả thuận giữa các bên trong hợp đồng (ở trường
+ hợp này là các hệ thống máy tính) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bartoletti2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Toàn bộ hoạt động của hợp đồng thông minh được thực hiện một cách tự động
+ mà không có sự can thiệp từ bên ngoài, hay thông qua một bên thứ ba trung
+ gian.
+ Các điều khoản trong hợp đồng thông minh tương đương với một hợp đồng có
+ pháp lý và được ghi lại dưới ngôn ngữ của lập trình 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abeyratne2016,Bartoletti2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Điểm nổi bật nhất của hợp đồng thông minh là cho phép hai bên tham gia thực
+ hiện hợp đồng một cách chính xác, an toàn và nhanh chóng mà không cần gặp
+ trực tiếp, hay một bên trung gian thứ ba mà chỉ cần có kết nối Internet.
+\end_layout
+
+\begin_layout Paragraph
+Các bước thực hiện hợp đồng thông minh
+\end_layout
+
+\begin_layout Enumerate
+Mã hóa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mã hóa
+\end_layout
+
+\end_inset
+
+ (Encoding)
+\end_layout
+
+\begin_layout Enumerate
+Hợp đồng thông minh được gửi thông qua sổ cái phân tán
+\end_layout
+
+\begin_layout Enumerate
+Thực hiện hợp đồng
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+So sánh hợp đồng thông minh và hợp đồng truyền thống
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1.2"
+
+\end_inset
+
+So sánh hợp đồng thông minh và hợp đồng truyền thống.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hợp đồng thông minh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hợp đồng truyền thống
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phương thức giao dịch
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Được xây dựng dựa trên các ngôn ngữ lập trình máy tính.
+ Được ký bởi chữ ký điện tử.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Được xây dựng bởi các chuyên gia pháp lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thời gian xác lập
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nhanh gọn, không tốn thời gian
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mất thời gian để hoàn thiện khung pháp lý cho hợp đồng
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tính pháp lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Các quy định và chính sách mang tính pháp lý vẫn chưa đầy đủ và rõ ràng.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Được quy định đầy đủ bởi hệ thống pháp luật
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tính minh bạch
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thực hiện tự động, đảm bảo được tính minh bạch
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Được thực hiện bởi các bên có liên quan, kém minh bạch hơn.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rủi ro bảo mật
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Có nguy cơ bị tin tặc tấn công
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Được đảm bảo thực hiện bởi pháp luật.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Thách thức khi ứng dụng hợp đồng thông minh
+\end_layout
+
+\begin_layout Itemize
+Bảo mật: nhiều lỗ hổng được gây ra bởi sự hiểu lầm trong việc chuyển đổi
+ các điều khoản trên thực tế sang ngôn ngữ lập trình, vì vậy vấn đề cải
+ thiện mức độ bảo mật và ngôn ngữ hợp đồng thông minh là một trong những
+ mối quan tâm chính của bất kì hệ thống nào.
+\end_layout
+
+\begin_layout Itemize
+Thiếu tính pháp lý: nhiều quốc gia vẫn chưa công nhận hợp đồng thông minh.
+\end_layout
+
+\begin_layout Subsection
+Đặc điểm của blockchain
+\end_layout
+
+\begin_layout Paragraph
+Là một sổ cái phân tán
+\end_layout
+
+\begin_layout Standard
+Thông tin được chia sẻ trên blockchain tồn tại dưới dạng cơ sở dữ liệu được
+ chia sẻ, nhân rộng và đồng bộ liên tục.
+ Mọi dữ liệu không được lưu trữ tập trung ở duy nhât một vị trí nào trên
+ mạng, các bản ghi được lưu trữ một cách công khai, dễ kiểm chứng 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abeyratne2016,Nakamoto,Pierro2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Tính bất biến
+\end_layout
+
+\begin_layout Standard
+Dữ liệu khi đã được đóng gói thành các khối và đưa lên blockchain
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Blockchain
+\end_layout
+
+\end_inset
+
+ thì không thể sửa đổi, can thiệp vào 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abeyratne2016,Nakamoto"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Tính bền vững
+\end_layout
+
+\begin_layout Standard
+Các khối trong blockchain không thể bị hỏng.
+ Nếu bất cứ khối tại một nút nào bị lỗi, ngay lập tức hệ thống sẽ phát đi
+ cảnh báo tới các nút trên mạng, đồng thời, thay thế khối tại nút đó dựa
+ trên bản sao sổ cái tại các nút khác trên mạng.
+\end_layout
+
+\begin_layout Paragraph
+Tính minh bạch
+\end_layout
+
+\begin_layout Standard
+Mọi giao dịch trên mạng blockchain đều được công khai.
+ Bất cứ người dùng nào cũng có thể xem được.
+\end_layout
+
+\begin_layout Paragraph
+Tăng cường bảo mật
+\end_layout
+
+\begin_layout Standard
+Do dữ liệu được lưu trữ phân tán nên blockchain loại bỏ những rủi ro đi
+ kèm với dữ liệu được tổ chức tập trung.
+ Mạng blockchain không có những điểm dễ bị tổn thương.
+\end_layout
+
+\begin_layout Section
+Ứng dụng của Blockchain
+\end_layout
+
+\begin_layout Subsection
+Bitcoin - Ứng dụng đầu tiên của blockchain
+\end_layout
+
+\begin_layout Standard
+Bitcoin là một loại tiền mã hoá, được phát hành năm 2009 thông qua một bài
+ báo mang tựa đề 
+\begin_inset Quotes eld
+\end_inset
+
+Bitcoin: A Peer-to-Peer Electronic Cash System
+\begin_inset Quotes erd
+\end_inset
+
+ bới Satoshi Nakamoto 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto"
+literal "false"
+
+\end_inset
+
+.
+ Giao dịch được thực hiện mà không cần thông qua bên trung gian.
+ Do đó không có phí giao dịch và không cần phải cung cấp tên thật.
+\end_layout
+
+\begin_layout Standard
+Bitcoin chính là ví dụ điển hình cho tiền điện tử (cryptocurrency) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nakamoto"
+literal "false"
+
+\end_inset
+
+, với đặc điểm hấp dẫn người dùng bởi tính ẩn danh và không bị kiểm soát
+ bởi chính phủ, được dự đoán như một loại tiền tệ tiềm năng có khả năng
+ thay thế tiền giấy .
+\end_layout
+
+\begin_layout Standard
+Công nghệ Blockchain cung cấp một sổ cái công khai Bitcoin, là một danh
+ sách sắp xếp theo trình tự thời gian của các giao dịch.
+ Hệ thống này được dùng để chống lại chi tiêu kép và những hành động sửa
+ bản ghi trái phép.
+ Mỗi nút trong mạng Bitcoin đều giữ một bản sao Blockchain đã được phân
+ tán và có chứa những khối được xác thực bởi nút đó.
+ Các nút phải tuyên theo các cơ chế đồng thuận để duy trì sự đồng thuận
+ trên toàn bộ mạng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:1.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ liệt kê những thông tin cơ bản về Bitcoin (tính đến ngày 11/05/2020).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1.3"
+
+\end_inset
+
+Thông tin cơ bản về Bitcoin (tính đến ngày 11/05/2020)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số lượng Bitcoin (BTC) tối đa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21,000,000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số lượng đào được hiện tại
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18,573,413
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thuật toán hàm băm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SHA256
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cơ chế đồng thuận
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Cơ chế đồng thuận
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PoW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Giá trị Bitcoin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$23,220 / 1 BTC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phần thưởng cho mỗi block
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.25 BTC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thời gian trung bình tạo ra 1 khối
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 phút
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số lần xảy ra sự kiện Bitcoin Halving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Bitcoin được thiết kế như một loại tiền tệ giảm phát.
+ Theo thời gian, việc phát hành Bitcoin sẽ giảm và do đó trở nên khan hiếm
+ hơn.
+ Khi Bitcoin trở nên khan hiếm hơn và nếu nhu cầu đối với chúng tăng theo
+ thời gian, Bitcoin có thể chống lạm phát, và giá trị đồng Bitcoin tăng
+ lên.
+ Giá trị đồng tiền này lần đầu ấn định trên sàn giao dịch ngày 5 tháng 10
+ năm 2009 là 0.00076 USD / 1 BTC, và hiện tại, giá trị đồng tiền này đã tăng
+ kỷ lục lên mức 23,000 USD/ 1 BTC.
+\end_layout
+
+\begin_layout Subsection
+Truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+Hiện nay công nghệ blockchain đã được ứng dụng trong nông nghiệp cụ thể
+ là truy xuất nguồn gốc trên toàn bộ chuỗi cung ứng.
+ Blockchain hứa hẹn cải thiện truy xuất nguồn gốc và minh bạch trong chuỗi
+ giá trị nông nghiệp thông qua các tiêu chí:
+\end_layout
+
+\begin_layout Itemize
+Cập nhật thông tin nhanh chóng theo thời gian thực và kết nối thông tin.
+\end_layout
+
+\begin_layout Itemize
+Dữ liệu được bảo mật và đáng tin cậy.
+\end_layout
+
+\begin_layout Itemize
+Khả năng truy cập dữ liệu nhanh chóng.
+\end_layout
+
+\begin_layout Standard
+Việc ứng dụng blockchain trong truy xuất nguồn gốc cho phép dữ liệu đã được
+ chia sẻ trên hệ thống có thể truy cập nhanh chóng trong thời gian thực.
+ Chính vì vậy cho phép việc truy xuất thông tin nhanh chóng về dữ liệu nguồn
+ gốc của sản phẩm đến từng công đoạn của quá trình sản xuất, kinh doanh
+ mà các mắt xích đã đưa lên mạng lưới dữ liệu chung.
+ Việc truy lại chính xác, xác định nguyên nhân mất an toàn và thu hồi sản
+ phẩm cũng dễ dàng hơn khi áp dụng công nghệ blockchain.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ và 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ sẽ đưa ra những kiến thức cơ bản về truy xuất nguồn gốc và xây dựng ứng
+ dụng truy xuất nguồn gốc dựa trên công nghệ blockchain.
+\end_layout
+
+\begin_layout Subsection
+Xây dựng chính phủ điện tử
+\end_layout
+
+\begin_layout Standard
+Trong số những công nghệ nền tảng phát triển chính phủ điện tử, blockchain
+ thu hút được nhiều sự quan tâm nhờ vào tính minh bạch, tin cậy và bảo mật
+ dữ liệu, đặc biệt nó phù hợp trong việc cung cấp dịch vụ công trực tuyến
+ cho người dân, doanh nghiệp.
+ Blockchain sẽ cho phép lưu trữ toàn bộ tương tác giữa người dân, doanh
+ nghiệp với các cơ quan nhà nước.
+ Quan trọng hơn, với mô hình như vậy, dữ liệu sẽ được liên thông, lưu trữ
+ bởi tất cả đối tượng sử dụng hệ thống, tự động cập nhật khi có thay đổi.
+\end_layout
+
+\begin_layout Standard
+Để áp dụng thực tế vào chính phủ điện tử, có thể xem xét một số nguyên tắc
+ triển khai chính phủ điện tử từ tính chất vốn có của blockchain như sau:
+\end_layout
+
+\begin_layout Enumerate
+Nguyên tắc luật hoá: bảo đảm tính áp buộc, cho phép thực thi luật thông
+ qua cơ chế hợp đồng thông minh.
+\end_layout
+
+\begin_layout Enumerate
+Nguyên tắc công khai, minh bạch (hoặc chiến lược mã nguồn mở): cho phép
+ mọi người kiểm tra các luật lệ gắn với mã lệnh, giúp phần mềm an toàn bảo
+ mật hơn, thúc đẩy sự phát triển của hệ sinh thái các phần mềm chính phủ
+ điện tử.
+\end_layout
+
+\begin_layout Enumerate
+Nguyên tắc tự động quy trình: xây dựng hệ thống chính phủ điện tử nhanh
+ hơn và hiệu quả hơn; giúp nâng cao sự tham gia của cộng đồng vào công việc
+ chung, dẫn đến các hoạt động tự quản trị của xã hội, tạo ra một hệ thống
+ chính quyền dân chủ.
+ 
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:2"
+
+\end_inset
+
+Truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+An toàn thực phẩm đang là mối quan tâm hàng đầu hiện nay của người dân nhiều
+ nước, do việc sử dụng các hóa chất vượt quá giới hạn cho phép cho thực
+ phẩm, đe dọa chất lượng và độ an toàn của sản phẩm, ảnh hưởng trực tiếp
+ đến sức khỏe của con người.
+ Vấn đề thu hồi các sản phẩm được xác định là thực phẩm bẩn, không an toàn
+ đã trở nên cần thiết.
+ Truy xuất nguồn gốc
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Truy xuất nguồn gốc
+\end_layout
+
+\end_inset
+
+ là một công cụ cho phép các đơn vị sản xuất, cung ứng thực phẩm hoặc cơ
+ quan chức năng cùng tham gia để đáp ứng yêu cầu đó.
+ Nó là nền tảng để xây dựng chính sách an toàn thực phẩm của bất kỳ quốc
+ gia nào.
+\end_layout
+
+\begin_layout Section
+Khái niệm truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+Truy xuất nguồn gốc là khả năng lưu trữ và thu thập lại tất cả thông tin
+ về nguồn gốc, nguyên liệu làm ra của một sản phẩm, đặc biệt là khi sản
+ phẩm đó bị lỗi.
+ Hệ thống xác định nguồn gốc cho phép xác định chất lượng một sản phẩm thông
+ qua các giai đoạn và hoạt động liên quan đến sản xuất, chế biến, phân phối
+ và xử lý thực phẩm, từ nơi sản xuất đến người tiêu dùng.
+ Do đó, nó có thể tạo điều kiện thuận lợi cho việc xác định nguyên nhân
+ của sản phẩm không đạt yêu cầu, thu hồi sản phẩm đó nếu cần thiết và ngăn
+ chặn các sản phẩm không an toàn đến tay khách hàng.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Khái niệm truy xuất nguồn gốc định nghĩa bởi ISO (International Organization
+ for Standardization - Tổ chức Tiêu chuẩn hóa Quốc tế) 
+\end_layout
+
+\begin_layout Standard
+ISO
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+ISO
+\end_layout
+
+\end_inset
+
+ đưa ra định nghĩa: 
+\begin_inset Quotes eld
+\end_inset
+
+Truy xuất nguồn gốc là khả năng theo dõi chuyển động của thực phẩm qua (các)
+ giai đoạn cụ thể của sản xuất, chế biến và phân phối
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ISO"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Tiêu chuẩn ISO 22005:2007 giải thích một cách toàn diện các nguyên tắc và
+ yêu cầu đối với việc thiết kế và triển khai hệ thống truy xuất nguồn gốc
+ thực phẩm.
+ Tiêu chuẩn này cho phép các tổ chức hoạt động ở bất kỳ bước nào của chuỗi
+ thực phẩm:
+\end_layout
+
+\begin_layout Enumerate
+Theo dõi quá trình vận chuyển nguyên liệu (thức ăn, thực phẩm, thành phần
+ của chúng và bao bì).
+\end_layout
+
+\begin_layout Enumerate
+Xác định các văn bản, tài liệu có liên quan và theo dõi sát sao từng giai
+ đoạn sản xuất.
+\end_layout
+
+\begin_layout Enumerate
+Đảm bảo sự phối hợp đầy đủ giữa các bên liên quan.
+\end_layout
+
+\begin_layout Enumerate
+Cải thiện khả năng trao đổi giữa các bên liên quan.
+\end_layout
+
+\begin_layout Enumerate
+Nâng cao độ tin cậy của thông tin, tính hiệu quả và năng suất của tổ chức.
+\end_layout
+
+\begin_layout Section
+Đặc điểm của truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+Hệ thống truy xuất nguồn gốc là tổng hợp của dữ liệu và hoạt động có khả
+ năng cung cấp thông tin về một sản phẩm và các thành phần của nó trên tất
+ cả hoặc một phần của chuỗi sản xuất và sử dụng (ISO 2007).
+ Hệ thống ghi lại dữ liệu và theo dõi sản phẩm và nguyên liệu từ nguồn cung,
+ tới bước chế biến, phân phối sản phẩm và cuối cùng đến tay người tiêu dùng.
+ Do đó, cơ sở của toàn bộ hệ thống được xây dựng dọc theo chuỗi cung ứng
+ từ nơi sản xuất đến nơi tiêu thụ.
+\end_layout
+
+\begin_layout Standard
+Những đặc điểm cơ bản của một hệ thống truy xuất nguồn gốc bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Xác định chi tiết từng đơn vị/ lô của tất cả các thành phần và sản phẩm;
+\end_layout
+
+\begin_layout Itemize
+Thông tin về thời gian và địa điểm các đơn vị/ lô được chuyển đi, xử lý.
+\end_layout
+
+\begin_layout Itemize
+Hệ thống sẽ liên kết những dữ liệu này và chuyển tất cả thông tin xác định
+ nguồn gốc có liên quan tới sản phẩm đến công đoạn tiếp theo.
+\end_layout
+
+\begin_layout Standard
+Trên thực tế, hệ thống xác định nguồn gốc lưu trữ hồ sơ dựa trên đường dẫn
+ của một sản phẩm cụ thể từ nhà cung cấp thông qua các bước trung gian đến
+ người tiêu dùng như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:2.2.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ sau:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename trace_pro.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2.2.1"
+
+\end_inset
+
+Mô hình cơ bản của hệ thống truy xuất nguồn gốc sản phẩm và luồng thông
+ tin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bản chất của việc xây dựng một hệ thống truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+Hệ thống truy xuất nguồn gốc thực phẩm kiểm soát thông tin về thành phần
+ thực phẩm, nguồn nguyên liệu, cách chế biến cũng như điều kiện vận chuyển
+ và bảo quản.
+ Vì vậy, một hệ thống truy xuất nguồn gốc lý tưởng sẽ chứa thông tin về
+ cả định lượng và chất lượng của từng thành phần cấu tạo nên sản phẩm cuối
+ cùng.
+\end_layout
+
+\begin_layout Standard
+Để phát triển hệ thống truy xuất nguồn gốc hiệu quả, cần phải giải quyết
+ những vấn đề sau 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Corallo2018"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Xác định dữ liệu nào quan trọng và cần phải được thu thập.
+\end_layout
+
+\begin_layout Enumerate
+Chủ sở hữu của thông tin trong mọi giai đoạn của chuỗi cung ứng.
+\end_layout
+
+\begin_layout Enumerate
+Phương tiện, thiết bị để thu thập dữ liệu.
+\end_layout
+
+\begin_layout Enumerate
+Cách quản lý dữ liệu sao cho luôn sẵn có và dễ hiểu với tất cả các bên liên
+ quan và người tiêu dùng.
+\end_layout
+
+\begin_layout Section
+Các cấp độ truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Standard
+Theo các nghiên cứu của Corallo và Aung cùng các cộng sự, có hai cấp độ
+ truy xuất nguồn gốc khác nhau 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AUNG2014172,Corallo2018"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename type_trace.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Minh họa hai cấp độ truy xuất nguồn gốc: truy xuất toàn cục và truy xuất
+ nội bộ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Truy xuất nội bộ
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Truy xuất nội bộ
+\end_layout
+
+\end_inset
+
+ (Internal traceability)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Truy xuất nguồn gốc nội bộ là quá trình truy xuất được duy trì trong nội
+ bộ đơn vị doanh nghiệp để liên kết dữ liệu giữa các công đoạn, giữa các
+ nguyên liệu và thành phẩm.
+ Mối liên kết giữa sản phẩm và các nguyên liệu đầu vào của nó phải được
+ duy trì (chẳng hạn như máy cày, phân bón, bao bì, ...
+ và nhiều nguyên liệu đầu vào khác) để duy trì truy xuất nguồn gốc 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AUNG2014172,Corallo2018"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Truy xuất toàn cục
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Truy xuất toàn cục
+\end_layout
+
+\end_inset
+
+ (External traceability)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Truy xuất toàn cục là quá trình truy xuất thông tin về sản phẩm giữa các
+ đơn vị tham gia kênh phân phối sản phẩm 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AUNG2014172"
+literal "false"
+
+\end_inset
+
+.
+ Việc truy xuất nguồn gốc sản phẩm đòi hỏi xác định:
+\end_layout
+
+\begin_layout Itemize
+Mã sản phẩm duy nhất.
+\end_layout
+
+\begin_layout Itemize
+Mã lô hàng.
+\end_layout
+
+\begin_layout Standard
+Để duy trì khả năng truy xuất nguồn gốc toàn cục, mã vật phẩm phải được
+ gắn trên nhãn sản phẩm.
+ Điều này liên kết các sản phẩm vật lý với các yêu cầu thông tin cần thiết
+ để truy xuất nguồn gốc.
+ Truy xuất nguồn gốc toàn cục cho phép: truy tìm trở lại (truy xuất nguồn
+ gốc nhà cung cấp) và theo dõi chuyển tiếp (truy xuất nguồn gốc khách hàng).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Một thách thức chính đối với các hệ thống truy xuất này nằm ở sự phức tạp
+ của chúng, vì mọi tác nhân có thể có các tiêu chuẩn và phương pháp riêng
+ của họ để theo dõi và truy tìm sản phẩm, dẫn đến nhiều loại dữ liệu thu
+ được.
+ Do đó, việc tổ chức, quản lý và sử dụng các loại dữ liệu khác nhau đòi
+ hỏi khả năng tùy biến của hệ thống 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PAPPA2018123"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Quy trình xây dựng hệ thống
+\end_layout
+
+\begin_layout Standard
+Một quy trình xây dựng hệ thống truy xuất nguồn gốc thực phẩm hoàn thiện
+ bao gồm những bước cơ bản sau:
+\end_layout
+
+\begin_layout Paragraph
+Bước 1: Xác định vấn đề và mục tiêu.
+\end_layout
+
+\begin_layout Paragraph
+Bước 2: Xác định cơ chế đồng thuận thích hợp nhất.
+\end_layout
+
+\begin_layout Paragraph
+Bước 3: Xác định nền tảng phù hợp nhất.
+\end_layout
+
+\begin_layout Paragraph
+Bước 4: Thiết kế cấu tạo.
+\end_layout
+
+\begin_layout Paragraph
+Bước 5: Cấu hình ứng dụng.
+\end_layout
+
+\begin_layout Paragraph
+Bước 6: Xây dựng các APIs.
+\end_layout
+
+\begin_layout Paragraph
+Bước 7: Thiết kế giao diện người dùng.
+\end_layout
+
+\begin_layout Paragraph
+Bước 8: Kiểm tra và xác định các vấn đề.
+\end_layout
+
+\begin_layout Section
+Hệ thống truy xuất nguồn gốc hiệu quả
+\end_layout
+
+\begin_layout Standard
+Trong mọi trường hợp, khả năng xác định nguồn gốc phụ thuộc vào việc thu
+ thập và ghi chép chính xác các dữ liệu, được điều phối bởi hệ thống quản
+ lý.
+ Hệ thống truy xuất nguồn gốc đạt hiệu quả khi các sản phẩm thực phẩm có
+ thể dễ dàng được truy xuất toàn bộ thông tin trong chuỗi cung ứng thực
+ phẩm.
+\end_layout
+
+\begin_layout Standard
+Các yếu tố chính ảnh hưởng đến hiệu quả của truy xuất nguồn gốc như: cấu
+ trúc và cách tổ chức chuỗi cung ứng
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Chuỗi cung ứng
+\end_layout
+
+\end_inset
+
+ (số lượng, mức độ tương tác, khả năng quản lý,...của thành viên); thời gian
+ để truy xuất một sản phẩm; độ tin cậy của phương pháp; phương pháp thu
+ thập và chuẩn hóa dữ liệu và phạm vi có thể truy xuất.
+\end_layout
+
+\begin_layout Standard
+Một hệ thống truy xuất nguồn gốc thực phẩm bao gồm những thông tin về: các
+ bên buôn bán sản phẩm (nhà cung cấp nguyên liệu, trang trại, nhà phân phối,
+ đơn vị vận chuyển, khách hàng); các bên chế biến, xử lý và lưu trữ sản
+ phẩm (nhà máy chế biến, đóng gói, kho bảo quản, cửa hàng phân phối,...); nguyên
+ liệu tạo thành sản phẩm và ngày, giờ nhận- gửi sản phẩm của các bên.
+\end_layout
+
+\begin_layout Standard
+Điểm mấu chốt để một chương trình xác định nguồn gốc thành công là khả năng
+ nhận dạng chính xác.
+ Hiện nay, công nghệ sử dụng mã vạch
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Mã vạch
+\end_layout
+
+\end_inset
+
+ được ưa chuộng và phổ biến trong thực tế bởi tính tiện dụng và dễ dàng
+ truy xuất bằng các thiết bị phổ biến như điện thoại thông minh.
+ Việc tận dụng công nghệ mã vạch giúp hệ thống trở nên dễ tiếp cận hơn với
+ đa số người dùng.
+\end_layout
+
+\begin_layout Section
+Lợi ích và thách thức của hệ thống truy xuất nguồn gốc
+\end_layout
+
+\begin_layout Paragraph
+Lợi ích
+\end_layout
+
+\begin_layout Itemize
+Truy vấn và thực hiện thu hồi, xử lý nhanh chóng các sản phẩm kém chất lượng
+ khi có vấn đề về an toàn thực phẩm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kiểm soát nhanh dòng thông tin từ các khâu của chuỗi cung ứng, quản lý thông
+ tin sản xuất nội bộ, phòng chống và phát hiện hàng giả, hàng nhái.
+\end_layout
+
+\begin_layout Itemize
+Tăng sự tin tưởng của người tiêu dùng: các thông tin về nguồn gốc sản phẩm,
+ quá trình hình thành sản phẩm đều được minh bạch với người tiêu dùng, giúp
+ họ tin tưởng hơn về sản phẩm.
+\end_layout
+
+\begin_layout Itemize
+Là phương tiện để kết nối trực tiếp với người tiêu dùng cuối cùng, thông
+ qua đó quảng bá sản phẩm, xây dựng thương hiệu doanh nghiệp.
+\end_layout
+
+\begin_layout Paragraph
+Thách thức
+\end_layout
+
+\begin_layout Itemize
+Chi phí để xây dựng, duy trì hệ thống truy xuất nguồn gốc đánh trực tiếp
+ vào chi phí sản xuất ra sản phẩm khiến giá thành sản phẩm bị đội lên cao.
+\end_layout
+
+\begin_layout Itemize
+Quy trình thu thập dữ liệu và chuẩn hóa dữ liệu đòi hỏi hàm lượng công nghệ
+ cao, đi kèm với chi phí lớn.
+\end_layout
+
+\begin_layout Itemize
+Khả năng tiếp cận và ứng dụng công nghệ của các đơn vị trong chuỗi sản xuất
+ chưa đáp ứng.
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:3"
+
+\end_inset
+
+Ứng dụng Blockchain trong truy xuất nguồn gốc thực phẩm
+\end_layout
+
+\begin_layout Section
+Nền tảng Hyperledger Fabric
+\end_layout
+
+\begin_layout Subsection
+Giới thiệu về Hyperledger Fabric
+\end_layout
+
+\begin_layout Standard
+Hyperledger Faric là một nền tảng cho các giải pháp sổ cái phân tán được
+ xây dựng dựa trên kiến trúc mô-đun mang lại độ bảo mật cao, khả năng phục
+ hồi, tính linh hoạt dễ tùy biến và khả năng mở rộng dễ dàng.
+\end_layout
+
+\begin_layout Standard
+Fabric hỗ trợ các giao thức đồng thuận kết hợp, giúp cho hệ thống vẫn đạt
+ được sự đồng thuận một cách chính xác cho dù các thành phần khác có thể
+ bị lỗi 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Androulaki2018"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Tính mô-đun
+\end_layout
+
+\begin_layout Standard
+Fabric được xây dựng gồm các mô-đun sau: 
+\end_layout
+
+\begin_layout Itemize
+Một dịch vụ cung cấp thành viên (Membership Service Provider
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Membership Service Provider
+\end_layout
+
+\end_inset
+
+): liên kết các thực thể trong mạng, có khả năng tích hợp.
+ 
+\end_layout
+
+\begin_layout Itemize
+Dịch vụ đặt hàng (Ordering Service
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Ordering Service
+\end_layout
+
+\end_inset
+
+) cho phép tích hợp giao thức đồng thuận về thứ tự giao dịch và quảng bá
+ cho các khối ngang hàng.
+ 
+\end_layout
+
+\begin_layout Itemize
+Một dịch vụ nhắn tin ngang hàng.
+\end_layout
+
+\begin_layout Itemize
+Sổ cái hỗ trợ nhiều hệ quản trị cơ sở dữ liệu.
+ 
+\end_layout
+
+\begin_layout Itemize
+Hợp đồng thông minh chạy trong môi trường Docker.
+ 
+\end_layout
+
+\begin_layout Itemize
+Một plugin có thể liên kết các chính sách xác thực.
+\end_layout
+
+\begin_layout Paragraph
+Hợp đồng thông minh
+\end_layout
+
+\begin_layout Standard
+Hợp đồng thông minh trong Fabric được gọi là chaincode 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Androulaki2018"
+literal "false"
+
+\end_inset
+
+, có những đặc điểm chính là:
+\end_layout
+
+\begin_layout Itemize
+Nhiều hợp đồng thông minh chạy đồng thời trong mạng.
+ 
+\end_layout
+
+\begin_layout Itemize
+Có thể triển khai linh hoạt.
+\end_layout
+
+\begin_layout Standard
+Fabric xây dựng một kiến trúc mới cho các giao dịch là: Thực thi - Đặt lệnh
+ - Xác thực, trong đó:
+\end_layout
+
+\begin_layout Itemize
+Thực thi một giao dịch và kiểm tra tính chính xác của nó, xác nhận nó.
+ 
+\end_layout
+
+\begin_layout Itemize
+Đặt lệnh qua giao thức đồng thuận.
+ 
+\end_layout
+
+\begin_layout Itemize
+Xác thực giao dịch dựa trên xác nhận ứng dụng cụ thể trước khi chốt với
+ sổ cái.
+\end_layout
+
+\begin_layout Subsection
+Thuật toán đồng thuận trong Hyperledger Fabric
+\end_layout
+
+\begin_layout Standard
+Trong Hyperledger Fabric, sự đồng thuận được tạo thành từ ba bước riêng
+ biệt: chứng thực giao dịch, đặt hàng và xác nhận.
+ 
+\end_layout
+
+\begin_layout Standard
+Hyperledger Fabric hoạt động ở chế độ Permissioned Blockchain (được cấp
+ phép) với cơ chế kiểm soát truy cập và đồng thuận linh hoạt, giúp cải thiện
+ hiệu năng và độ mở rộng của ứng dụng.
+ Cơ chế đồng thuận của Fabric phủ khắp và bao gồm toàn bộ quá trình giao
+ dịch.
+ Thay vì là như nhau trong quá trình đồng thuận, các nút được phân bổ nhiệm
+ vụ và vai trò khác nhau: khách (client), người đặt hàng (orderer) hay thành
+ viên (peer) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Androulaki2018"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Client
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Client
+\end_layout
+
+\end_inset
+
+ là người dùng cuối, có quyền tạo và hủy giao dịch, giao tiếp với người
+ đặt hàng và thành viên.
+ 
+\end_layout
+
+\begin_layout Itemize
+Peer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Peer
+\end_layout
+
+\end_inset
+
+ duy trì sổ cái của blockchain, nhận tín hiệu từ người đặt hàng, đưa giao
+ dịch mới vào sổ cái.
+ Người xác nhận là thành viên đặc biệt có khả năng xác nhận giao dịch bằng
+ cách kiểm tra điều kiện, trạng thái, tính hợp lệ của giao dịch.
+ 
+\end_layout
+
+\begin_layout Itemize
+Người đặt hàng cung cấp kênh giao tiếp giữa khách và thành viên, nó đảm
+ bảo các tín hiệu giao dịch được phủ trên kênh giao tiếp.
+\end_layout
+
+\begin_layout Standard
+Khách hàng gửi giao dịch tới những người xác nhận để khởi tạo quá trình
+ thêm dữ liệu vào sổ cái.
+ Giao dịch được đề xuất phải được sự đồng ý của những người xác nhận.
+ Tiếp theo giao dịch được gửi đến những người đặt hàng, và chúng cần được
+ đồng thuận.
+ Sau đó, giao dịch này được chuyển tới đến các thành viên nắm giữ sổ cái
+ để bắt đầu giao dịch.
+\end_layout
+
+\begin_layout Subsection
+Mô hình Hyperledger Fabric
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hyperledgerarch.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kiến trúc Hyperledger Fabric 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Thành viên
+\end_layout
+
+\begin_layout Standard
+Cung cấp các dịch vụ quản lý danh tính, quyền riêng tư, bảo mật và kiểm
+ toán trên mạng.
+\end_layout
+
+\begin_layout Paragraph
+Chaincode
+\end_layout
+
+\begin_layout Standard
+Chaincode được sử dụng trong Hyperledger là Golang.
+ Có thể hiểu chaincode là một decentralized application (ứng dụng phân quyền
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Ứng dụng phân quyền
+\end_layout
+
+\end_inset
+
+), chạy trên các nút xác nhận hợp lệ và được đóng gói trong docker.
+\end_layout
+
+\begin_layout Paragraph
+Dịch vụ blockchain
+\end_layout
+
+\begin_layout Standard
+Các dịch vụ Blockchain bao gồm ba thành phần chính: giao thức peer-to-peer
+ (P2P), sổ cái phân tán và trình quản lý đồng thuận.
+\end_layout
+
+\begin_layout Paragraph
+Giao dịch
+\end_layout
+
+\begin_layout Standard
+Các giao dịch được thực hiện và lưu trữ trên blockchain.
+\end_layout
+
+\begin_layout Subsection
+Luồng giao dịch
+\end_layout
+
+\begin_layout Standard
+Các thành phần của luồng giao dịch bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Ứng dụng Client: các ứng dụng sử dụng SDK hoặc dịch vụ Web service Restfull
+ để tương tác với mạng Hyperledger Fabric.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+: Người xác thực giao dịch (Endorser peer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Endorser peer
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{3},P_{4}$
+\end_inset
+
+: Người xác minh và xác nhận kết quả giao dịch (Committing peer).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A,B,D$
+\end_inset
+
+: Hợp đồng thông minh (Chaincode).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P$
+\end_inset
+
+: Chính sách chứng thực.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sổ cái (Ledger)
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+World-state
+\series default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+World-state
+\end_layout
+
+\end_inset
+
+: cơ sở dữ liệu chứa các giá trị hiện tại của một tập hợp các trạng thái
+ sổ cái.
+ Các trạng thái sổ cái mặc định được biểu thị dưới dạng cặp khóa-giá trị.
+\end_layout
+
+\begin_layout Paragraph
+Bước 1: Yêu cầu giao dịch
+\end_layout
+
+\begin_layout Standard
+Ứng dụng Client sẽ gửi đi đề nghị giao dịch với hợp đồng thông minh A tới
+ các thành phần chứng thực giao dịch 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step1.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Yêu cầu giao dịch 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bước 2: Thực hiện yêu cầu
+\end_layout
+
+\begin_layout Standard
+E0, E1, E2 sẽ thực hiện các đề nghị giao dịch bằng cách kiểm tra các chứng
+ chỉ để xác thực giao dịch.
+ Với mỗi một lệnh được thực hiện thì sẽ ghi lại trạng thái đọc và ghi của
+ dữ liệu, gọi là tập ReadWrite (RW).
+ Công đoạn này sẽ thực hiện Chaincode để trả về các phản hồi cho ứng dụng
+ Client.
+\end_layout
+
+\begin_layout Paragraph
+Bước 3: Phản hồi yêu cầu
+\end_layout
+
+\begin_layout Standard
+Tập RW được xác thực bởi các người xác thực sẽ được thực hiện đồng bộ trở
+ lại với ứng dụng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step3.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Phản hồi yêu cầu 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bước 4: Giao dịch đặt hàng
+\end_layout
+
+\begin_layout Standard
+Ứng dụng Client tiếp tục gửi đi kết quả đã được phê duyệt như một giao dịch
+ tới dịch vụ đặt hàng Ordering-Service.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step4.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Giao dịch đặt hàng 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bước 5: Chuyển giao dịch
+\end_layout
+
+\begin_layout Standard
+Dịch vụ đặt hàng Ordering-Service sẽ tập hợp các giao dịch trong một khối
+ kết quả và gửi cho các nút trong mạng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step5.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Chuyển giao dịch 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bước 6: Xác nhận giao dịch
+\end_layout
+
+\begin_layout Standard
+Mọi người xác minh (Committing peer
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Committing peer
+\end_layout
+
+\end_inset
+
+) sẽ xác nhận lại các chính sách xác thực một lần nữa.
+ Đồng thời nó kiểm tra hiệu lực của tập RW.
+ Việc xác nhận giao dịch sẽ được lưu vào World-state, còn sổ cái sẽ lưu
+ lại các giao dịch.
+ Khi này, sổ cái được đồng bộ hóa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step6.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Chuyển giao dịch 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bước 7: Thông báo
+\end_layout
+
+\begin_layout Standard
+Người xác minh sẽ thông báo lại cho ứng dụng rằng giao dịch có thành công
+ hay không.
+ Ứng dụng sẽ được thông báo bởi các nút mà nó kết nối tới.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename step7.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Chuyển giao dịch 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feagan2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hệ thống mạng Hyperledger Fabric
+\end_layout
+
+\begin_layout Standard
+Mạng Blockchain là một cơ sở hạ tầng kỹ thuật cung cấp sổ cái và hợp đồng
+ thông minh cho các ứng dụng.
+ Các hợp đồng thông minh được sử dụng để tạo ra các giao dịch sau đó phân
+ phối cho các nút ngang hàng trong mạng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hypernet.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.1.8"
+
+\end_inset
+
+Hệ thống mạng Hyperledger Fabric.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ở mô hình biểu diễn ở 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.1.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, Fabric CA là Fabric Certificate Authority
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Fabric Certificate Authority
+\end_layout
+
+\end_inset
+
+ cung cấp tính xác thực cho các người tham gia trong mạng Hyperledger.
+ Bất kỳ người tham gia nào muốn tham gia mạng blockchain phải được đăng
+ ký với CA trước.
+ Quá trình này gọi là tuyển thành viên.
+ Các Peer là các nút mạng, lưu trữ bản copy của blockchain và thực hiện
+ quá trình đồng thuận.
+ Dịch vụ đặt hàng Ordering Service kiểm tra quyền của client, xác thực các
+ giao dịch đến từ client.
+\end_layout
+
+\begin_layout Section
+Thực nghiệm xây dựng hệ thống
+\end_layout
+
+\begin_layout Subsection
+Phân tích và thiết kế hệ thống
+\end_layout
+
+\begin_layout Subsubsection
+Các tác nhân tham gia vào hệ thống
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Các tác nhân tham gia vào hệ thống
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="5cm">
+<column alignment="center" valignment="middle" width="5cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vai trò/Quyền hạn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mục đích
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khách hàng
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Đưa yêu cầu về những vấn đề liên quan tới sản phẩm.
+ Quản lý hệ thống sẽ tiếp nhận yêu cầu và giải quyết.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin về sản phẩm bao gồm cả lịch sử của sản phẩm khi trải qua
+ các công đoạn.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thông tin chi tiết về sản phẩm.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bộ phận 
+\end_layout
+
+\begin_layout Plain Layout
+ghi thông tin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Thêm/sửa thông tin sản phẩm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Có quyền thao tác với dữ liệu sản phẩm trong phạm vi sản phẩm đang quản
+ lý.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ghi nhận thông tin sản phẩm.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bộ phận kiểm tra
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kiểm tra các thông tin theo yêu cầu khách hàng.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thực hiện kiểm tra các thông tin của sản phẩm.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sơ đồ tổng quan về hệ thống
+\end_layout
+
+\begin_layout Standard
+Hệ thống blockchain trong báo cáo được xây dựng dựa trên 3 phần cơ bản như
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename general.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2.1"
+
+\end_inset
+
+Sơ đồ tổng quát của hệ thống blockchain
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Application:
+\series default
+ Tầng này là giao diện chính để các tác nhân tham gia vào hệ thống tương
+ tác với chương trình.
+ Nó cung cấp các tính năng của phần mềm để người dùng thao tác.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hyperledger
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Hyperledger
+\end_layout
+
+\end_inset
+
+ API:
+\series default
+ Cung cấp các hàm API được tạo ra bởi mạng blockchain.
+ Các API được thiết kế theo chuẩn Resful API
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Resful API
+\end_layout
+
+\end_inset
+
+ gồm các phương thức 
+\emph on
+get, put, post, delete
+\emph default
+ các đối tượng tài nguyên trong mạng.
+ Đồng thời nó cũng cung cấp hàm xử lý giao dịch trong mạng.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Blockchain network:
+\series default
+ Tầng này định nghĩa các đối tượng tham gia vào mạng, các tài nguyên để
+ thao tác, quyền hạn với mỗi thành viên trong mạng và smartcontract.
+\end_layout
+
+\begin_layout Subsubsection
+Sơ đồ chi tiết hệ thống
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Go Web (Client Application)
+\series default
+: cung cấp giao diện các chức năng cho người dùng tương tác
+\end_layout
+
+\begin_layout Itemize
+Chức năng Đăng nhập: người quản lý sẽ dùng tài khoản được cung cấp vào chương
+ trình.
+ Quản lý có nhiệm vụ sử dụng các chức năng để thêm, sửa thông tin về sản
+ phẩm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Chức năng Thêm thông tin sản phẩm.
+\end_layout
+
+\begin_layout Itemize
+Chức năng Sửa thông tin sản phẩm.
+\end_layout
+
+\begin_layout Itemize
+Chức năng Tra cứu thông tin khách hàng: cho phép người dùng hoặc quản lý
+ truy cập thông tin sản phẩm để tra cứu.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fabric-SDK-Go
+\series default
+: cung cấp các hàm tương tác với mạng Hyperledger Fabric
+\end_layout
+
+\begin_layout Itemize
+Thêm, sửa thông tin sản phẩm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin sản phẩm.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hyperledger Fabric
+\series default
+: mạng blockchain lưu trữ thông tin các đối tượng và tài nguyên.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stream.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kiến trúc hệ thống mạng blockchain
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Thiết kế cơ sở dữ liệu
+\end_layout
+
+\begin_layout Standard
+Cơ sở dữ liệu của sản phẩm được thiết kế như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.2"
+
+\end_inset
+
+Thiết kế cơ sở dữ liệu (Commodity) của sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="21" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Kiểu dữ liệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mô tả
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ObjectType
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Loại sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Primarykey
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mã sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tên
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Des
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mô tả
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Specification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khối lượng
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Source
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nguồn gốc
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Machining
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phương pháp xử lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remarks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ghi chú
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Principal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chủ sở hữu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PhoneNumber
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số điện thoại
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Photo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ảnh
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ShelfLife
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hạn sử dụng
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+StorageMethod
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phương pháp bảo quản
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Brand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nhãn hiệu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vendor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nhà phân phối
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PlaceOfProduction
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nơi sản xuất
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ExecutiveStandard
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiêu chuẩn chất lượng
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Historys
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[]HistoryItem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lịch sử chi tiết của sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thời gian
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, thuộc tính Historys được thiết kế là một danh sách lưu trữ lịch sử chi
+ tiết thông tin sản phẩm.
+ Mỗi một bản ghi trong Historys sẽ bao gồm: số giao dịch TxId và thuộc tính
+ Commodity (định nghĩa trong 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) giúp lưu trữ chi tiết thông tin sản phẩm (xem 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.3"
+
+\end_inset
+
+Thiết kế cơ sở dữ liệu (HistoryItem) của sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Kiểu dữ liệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mô tả
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TxId
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số giao dịch
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Commodity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Commodity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chi tiết về lịch sử
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Biểu đồ use-case tổng quát
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename usecase.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Biểu đồ use-case tổng quát.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mô tả chi tiết các use-case
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Use-case
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.4"
+
+\end_inset
+
+Bảng mô tả chi tiết các use-case.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="center" valignment="middle" width="3.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên usecase
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Đầu vào (Input)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Đầu ra (Output)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tra cứu thông tin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khách hàng, Quản lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mã sản phẩm cần tìm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thông tin chi tiết về sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Đăng nhập
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tên tài khoản và mật khẩu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thông tin đăng nhập
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thêm thông tin sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Toàn bộ thông tin về sản phẩm cần nhập
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sản phẩm được lưu thành bản ghi trong blockchain
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sửa đổi thông tin sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sản phẩm cần sửa đổi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sản phẩm sau khi sửa được lưu thành bản ghi mới (có dấu thời gian)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Xây dựng mạng Hyperledger Fabric
+\end_layout
+
+\begin_layout Standard
+Do quy mô đề tài ở mức cá nhân, nên cấu trúc của mạng bao gồm: 1 tổ chức
+ (organization) chứa 2 nút (peer); 1 order và 1 kênh (channel) (như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename netarch.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2.3"
+
+\end_inset
+
+Cấu trúc mạng Hyperledger Fabric.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quá trình thiết lập mô hình mạng và kết quả chạy thực tế được biểu diễn
+ như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ dưới đây:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename channel.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Thiết lập mô hình mạng.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename setting.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kết quả chạy thực tế.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2.4"
+
+\end_inset
+
+Quá trình thiết lập mô hình mạng và kết quả chạy thực tế.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Xây dựng chức năng và giao diện hệ thống
+\end_layout
+
+\begin_layout Subsubsection
+Trang chủ và menu các chức năng
+\end_layout
+
+\begin_layout Standard
+Giao diện trang chủ gồm phần mô tả thông tin ứng dụng và menu các chức năng
+ thao tác trong chương trình.
+ Menu gồm các chức năng:
+\end_layout
+
+\begin_layout Itemize
+Trang chủ: màn hình chính.
+\end_layout
+
+\begin_layout Itemize
+Đăng nhập.
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin bằng mã sản phẩm.
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin bằng tên sản phẩm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename home.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2.5"
+
+\end_inset
+
+Giao diện trang chủ hệ thống truy xuất nguồn gốc thực phẩm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Chức năng đăng nhập
+\end_layout
+
+\begin_layout Standard
+Chức năng đăng nhập dành cho đối tượng là quản lý.
+ Quản lý trong hệ thống sử dụng các chức năng của chương trình để cập nhật
+ thông tin về sản phẩm (thêm, sửa).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename login.png
+	scale 65
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Giao diện chức năng đăng nhập.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Những sự kiện của chức năng đăng nhập được mô tả trong 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.5"
+
+\end_inset
+
+Các sự kiện của chức năng đăng nhập.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên use-case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Đăng nhập
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện chính
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Hiển thị giao diện đăng nhập.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập tên đăng nhập và mật khẩu.
+\end_layout
+
+\begin_layout Enumerate
+Kiểm tra và xác nhận thông tin đăng nhập.
+\end_layout
+
+\begin_layout Enumerate
+Báo đăng nhập thành công.
+\end_layout
+
+\begin_layout Enumerate
+Hiển thị giao diện chính của hệ thống.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện ngoại lệ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Thông báo thông tin đăng nhập sai.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập lại tên đăng nhập và mật khẩu.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Chức năng thêm thông tin sản phẩm
+\end_layout
+
+\begin_layout Standard
+Chức năng thêm thông tin sản phẩm bị giới hạn ở đối tượng quản lý, chỉ những
+ đối tượng này mới có quyền thêm thông tin sản phẩm (xem 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename new.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2.8"
+
+\end_inset
+
+Giao diện thêm thông tin sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Một số thuộc tính của sản phẩm được đưa ra như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, chẳng hạn:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3.5cm">
+<column alignment="center" valignment="top" width="3.5cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Loại sản phẩm
+\end_layout
+
+\begin_layout Itemize
+Mã sản phẩm
+\end_layout
+
+\begin_layout Itemize
+Tên sản phẩm
+\end_layout
+
+\begin_layout Itemize
+Nhãn hiệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Mô tả
+\end_layout
+
+\begin_layout Itemize
+Thông số
+\end_layout
+
+\begin_layout Itemize
+Nguồn 
+\end_layout
+
+\begin_layout Itemize
+Xử lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Ghi chú
+\end_layout
+
+\begin_layout Itemize
+Chủ sở hữu
+\end_layout
+
+\begin_layout Itemize
+Điện thoại
+\end_layout
+
+\begin_layout Itemize
+Hạn sử dụng
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Bảo quản
+\end_layout
+
+\begin_layout Itemize
+Nhà sản xuất
+\end_layout
+
+\begin_layout Itemize
+Nơi sản xuất
+\end_layout
+
+\begin_layout Itemize
+Tiêu chuẩn
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+trong đó, lưu ý một số thuộc tính như: mô tả (thông tin về chất lượng, nguyên
+ liệu và hình thức sản xuất sản phẩm), thông số (khối lượng, thể tích),
+ xử lý (phương pháp xử lý, chế biến), ghi chú (quá trình vận chuyển,...), bảo
+ quản (phương pháp lưu trữ, thời gian,...), tiêu chuẩn (tiêu chuẩn chất lượng
+ sản phẩm thỏa mãn).
+\end_layout
+
+\begin_layout Standard
+Ngoài ra, chức năng thêm sản phẩm bao gồm cả thuộc tính hình ảnh (góc trên
+ bên phải 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3.2.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Dữ liệu đầu vào của thuộc tính là hình ảnh có kích thước lớn hơn hoặc bằng
+ 
+\begin_inset Formula $120\times160px$
+\end_inset
+
+ (định dạng jpg, jpeg, png).
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Các sự kiện của chức năng thêm thông tin sản phẩm được mô tả như 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.6"
+
+\end_inset
+
+Các sự kiện của chức năng thêm thông tin sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="10cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên use-case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thêm thông tin sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện chính
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Hiển thị giao diện điền thông tin sản phẩm.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập toàn bộ dữ liệu đầu vào của sản phẩm.
+\end_layout
+
+\begin_layout Enumerate
+Kiểm tra và xác nhận thông tin đầu vào.
+\end_layout
+
+\begin_layout Enumerate
+Trả về kết quả sau khi thêm sản phẩm vào bản ghi trong blockchain.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện ngoại lệ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Báo lỗi khi mã sản phẩm nhập vào bị trùng.
+\end_layout
+
+\begin_layout Enumerate
+Nhập sai định dạng dữ liệu.
+\end_layout
+
+\begin_layout Enumerate
+Hình ảnh tải lên không đúng định dạng hoặc kích thước.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập lại dữ liệu đầu vào.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Chức năng sửa thông tin sản phẩm
+\end_layout
+
+\begin_layout Standard
+Chức năng sửa thông tin sản phẩm cũng bị giới hạn ở đối tượng quản lý, chỉ
+ những đối tượng này mới có quyền sửa thông tin sản phẩm\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+Thông tin của sản phẩm trước khi sửa không bị mất đi, thay vào đó, thông
+ tin sau khi sửa đổi sẽ được lưu dưới dạng một bản ghi mới, sử dụng dấu
+ thời gian (Timestamp) để phân biệt với thông tin cũ của sản phẩm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mô tả những sự kiện của chức năng sửa thông tin sản phẩm:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.7"
+
+\end_inset
+
+Các sự kiện của chức năng sửa thông tin sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="10cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên use-case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sửa thông tin sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quản lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện chính
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Hiển thị giao diện sửa thông tin sản phẩm.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng chọn những thuộc tính cần thay đổi và nhập dữ liệu thay thế.
+\end_layout
+
+\begin_layout Enumerate
+Kiểm tra và xác nhận thông tin đầu vào.
+\end_layout
+
+\begin_layout Enumerate
+Trả về kết quả sau khi sửa thông tin sản phẩm dưới dạng bản ghi trong blockchain.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện ngoại lệ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Báo lỗi khi mã sản phẩm nhập vào bị trùng.
+\end_layout
+
+\begin_layout Enumerate
+Dữ liệu đầu vào không đúng định dạng.
+\end_layout
+
+\begin_layout Enumerate
+Hình ảnh tải lên không đúng định dạng hoặc kích thước.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập lại dữ liệu đầu vào.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename update.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Giao diện sửa đổi thông tin sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Chức năng tra cứu thông tin sản phẩm
+\end_layout
+
+\begin_layout Standard
+Có hai hình thức để tra cứu thông tin sản phẩm, bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin bằng mã sản phẩm.
+\end_layout
+
+\begin_layout Itemize
+Tra cứu thông tin bằng tên sản phẩm..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename trace_num.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Truy xuất thông tin bằng mã sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename trace_name.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Truy xuất thông tin bằng tên sản phẩm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Những sự kiện của chức năng tra cứu thông tin được mô tả trong 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:3.8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3.8"
+
+\end_inset
+
+Các sự kiện của chức năng tra cứu thông tin.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên use-case
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tra cứu thông tin
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tác nhân
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khách hàng, Quản lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện chính
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Hiển thị giao diện tra cứu.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng chọn phương thức tra cứu: mã sản phẩm hoặc tên sản phẩm.
+\end_layout
+
+\begin_layout Enumerate
+Nhập vào dữ liệu đầu vào (mã sản phẩm/tên sản phẩm) để tra cứu.
+\end_layout
+
+\begin_layout Enumerate
+Kiểm tra và xác nhận thông tin tra cứu.
+\end_layout
+
+\begin_layout Enumerate
+Hiển thị giao diện trả về kết quả truy xuất.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sự kiện ngoại lệ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Hiển thị trang trắng khi thông tin nhập vào không khớp.
+\end_layout
+
+\begin_layout Enumerate
+Người dùng nhập lại dữ liệu đầu vào.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kiểm thử và đánh giá kết quả
+\end_layout
+
+\begin_layout Subsection
+Kiểm thử và đánh giá chức năng đăng nhập
+\end_layout
+
+\begin_layout Standard
+Chức năng đăng nhập dành cho đối tượng quản lý.
+ Kiểm thử chức năng đăng nhập nhằm đảm bảo nó hoạt động bình thường và đối
+ tượng truy cập được vào hệ thống.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Điều kiện áp dụng
+\series default
+: dành cho đối tượng quản lý đã được cấp tài khoản và mật khẩu.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Các bước thực hiện: 
+\end_layout
+
+\begin_layout Standard
+Bước 1: Nhập đẩy đủ thông tin đăng nhập trên giao diện gồm: tên đăng nhập,
+ mật khẩu.
+\end_layout
+
+\begin_layout Standard
+Bước 2: Nhấn 
+\begin_inset Quotes eld
+\end_inset
+
+Đăng nhập
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả mong đợi
+\series default
+: truy cập bình thường vào hệ thống.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả thực tế
+\series default
+: đăng nhập thành công.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename login_success.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Thao tác đăng nhập hệ thống.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kiểm thử và đánh giá chức năng thêm thông tin sản phẩm
+\end_layout
+
+\begin_layout Standard
+Kiểm thử chức năng thêm thông tin sản phẩm nhằm đảm bảo thông tin khi nhập
+ vào được lưu vào blockchain.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Điều kiện áp dụng
+\series default
+: đã đăng nhập thành công vào hệ thống và đã vào chức năng thêm thông tin
+ sản phẩm.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Các bước thực hiện: 
+\end_layout
+
+\begin_layout Standard
+Bước 1: Nhập đẩy đủ thông tin sản phẩm trên giao diện gồm: loại sản phẩm,
+ mã sản phẩm, tên sản phẩm,...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Loại sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gạo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ghi chú
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Không
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mã sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Chủ sở hữu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Việt Hương
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tên sản phẩm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gạo lứt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Điện thoại
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12345678
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nhãn hiệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Việt Hương
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hạn sử dụng
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 năm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mô tả
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trồng trên ruộng
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bảo quản
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nơi khô ráo, nhiệt độ bình thường
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Thông số
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1kg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nhà sản xuất
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nhà máy Thái Bình
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nguồn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thái Bình
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nơi sản xuất
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Việt Nam
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Xử lý
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thu hoạch bằng máy gặt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tiêu chuẩn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TCVN 11888:2017
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mẫu nhập liệu thông tin sản phẩm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bước 2: Nhấn 
+\begin_inset Quotes eld
+\end_inset
+
+Thêm
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename addsample.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Thao tác thêm sản phẩm vào mạng.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả mong đợi
+\series default
+: thông tin sản phẩm được ghi vào blockchain.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả thực tế
+\series default
+: thông tin được ghi vào blockchain và có thể truy cập thông qua API.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename test1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kết quả thực tế khi ghi nhận thông tin sản phẩm truy vấn qua API.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kiểm thử và đánh giá chức năng sửa thông tin sản phẩm
+\end_layout
+
+\begin_layout Standard
+Kiểm thử chức năng sửa thông tin sản phẩm nhằm đảm bảo thông tin sản phẩm
+ sau khi sửa được lưu vào blockchain.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Điều kiện áp dụng
+\series default
+: đã đăng nhập thành công vào hệ thống và đã vào chức năng sửa thông tin
+ sản phẩm.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Các bước thực hiện: 
+\end_layout
+
+\begin_layout Standard
+Bước 1: Sửa dữ liệu các thuộc tính : loại sản phẩm, mã sản phẩm, tên sản
+ phẩm,...
+\end_layout
+
+\begin_layout Standard
+Bước 2: Nhấn 
+\begin_inset Quotes eld
+\end_inset
+
+Sửa
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả mong đợi
+\series default
+: thông tin sản phẩm sau khi sửa được ghi vào blockchain.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Kết quả thực tế
+\series default
+: thông tin sau khi sửa được ghi vào blockchain và có thể truy cập thông
+ qua API.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename update1.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Thao tác sửa thông tin sản phẩm trên mạng.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Kết uận kiểm thử: 
+\end_layout
+
+\begin_layout Standard
+các chức năng trong chương trình đã hoạt động đúng theo kịch bản đề ra,
+ thông tin sản phẩm ghi nhận được vào blockchain và để khai thác dữ liệu
+ các ứng dụng bên ngoài có thể sử dụng API được cung cấp để truy vấn.
+\end_layout
+
+\begin_layout Chapter*
+Kết luận
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Kết luận}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Những kết quả đạt được của báo cáo
+\end_layout
+
+\begin_layout Standard
+Đưa ra được bài toán thực tế và ứng dụng được những ưu điểm của công nghệ
+ blockchain mang lại và áp dụng cho bài toán truy xuất nguồn gốc.
+ Đồng thời nghiên cứu và áp dụng nền tảng Hyperledger Fabric để xây dựng
+ mạng blockchain phục vụ công tác tra cứu thông tin sản phẩm của người tiêu
+ dùng và công tác thêm, sửa thông tin sản phẩm của quản lý.
+ Báo cáo đã thực hiện cài đặt mạng blockchain và triển khai ứng dụng web
+ để cho quản lý cũng như khách hàng sử dụng.
+ 
+\end_layout
+
+\begin_layout Standard
+Phần mềm đưa công nghệ blockchain vào giúp tăng cường tính công khai, minh
+ bạch của dữ liệu chỉ số, giúp khách hàng có thể tra cứu và tin tưởng vào
+ thông tin sản phẩm được cung cấp.
+ Báo cáo để mở khả năng phát triển trong tương lai, có thể giải quyết các
+ bài toán khác trong truy xuất nguồn gốc ví dụ như: truy xuất nguồn gốc
+ tới tận các nguyên liệu tạo thành giúp khách hàng có thể kiểm tra được
+ xuất xứ và quá trình tạo ra sản phẩm từ nguyên liệu, v.v.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Hướng phát triển của báo cáo 
+\end_layout
+
+\begin_layout Standard
+Tiếp tục triển khai mở rộng, hoàn thiện các chức năng như thống kê, báo
+ cáo, cảnh báo trường hợp sửa đổi thông tin sản phẩm bất thường.
+ Hiệu chỉnh lại giao diện thân thiện, dễ sử dụng đối với người dùng.
+ 
+\end_layout
+
+\begin_layout Standard
+Tiếp tục nghiên cứu mạng blockchain, cụ thể là Hyperledger để ứng dụng được
+ nhiều tính năng của nền tảng này cung cấp như chia kênh, cài đặt các chứng
+ chỉ cho các thành viên tham gia.
+ Xây dựng ứng dụng di động để nhân viên dễ sử dụng và thao tác.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+name "Index"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "ref"
+options "bibtotoc,sami"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
