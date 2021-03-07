@@ -1,0 +1,1034 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage[utf8]{vietnam}
+\def\solutionname{Lời giải}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language vietnamese
+\language_package auto
+\inputencoding utf8x
+\fontencoding T5
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Phân tích dữ liệu
+\end_layout
+
+\begin_layout Author
+Nguyễn Công Thịnh - 20170924
+\end_layout
+
+\begin_layout Paragraph
+Bài 1.
+\end_layout
+
+\begin_layout Standard
+Cho ma trận:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{cc}
+9 & -2\\
+-2 & 6
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ có xác định dương không?
+\end_layout
+
+\begin_layout Enumerate
+Tìm trị riêng và vectơ riêng, sau đó viết khai triển phổ của 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Tìm nghịch đảo của 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Tìm trị riêng và vectơ riêng của ma trận đó.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ta có:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{cc}
+9 & -2\\
+-2 & 6
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta_{1}=\det\left[9\right]=9>0$
+\end_inset
+
+; 
+\begin_inset Formula $\Delta_{2}=\det\left[\begin{array}{cc}
+9 & -2\\
+-2 & 6
+\end{array}\right]=50>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ xác định dương.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ta giải phương trình:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(A-\lambda I)=\lambda^{2}-15\lambda+50=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=10; & v_{1}=\left(\begin{array}{c}
+2\\
+-1
+\end{array}\right)\\
+\lambda_{2}=5; & v_{2}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=10; & e_{1}=\text{\left(\begin{array}{c}
+\frac{2}{\sqrt{5}}\\
+\frac{-1}{\sqrt{5}}
+\end{array}\right)}\\
+\lambda_{2}=5; & e_{2}=\text{\left(\begin{array}{c}
+\frac{1}{\sqrt{5}}\\
+\frac{2}{\sqrt{5}}
+\end{array}\right)}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Khai triển phổ của 
+\begin_inset Formula $A$
+\end_inset
+
+ là:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+A & =\sum_{i=1}^{d}\lambda_{i}e_{i}e_{i}^{T}\\
+ & =\lambda_{1}e_{1}e_{1}^{T}+\lambda_{2}e_{2}e_{2}^{T}\\
+ & =10\left(\begin{array}{c}
+\frac{2}{\sqrt{5}}\\
+\frac{-1}{\sqrt{5}}
+\end{array}\right)\left(\begin{array}{cc}
+\frac{2}{\sqrt{5}} & \frac{-1}{\sqrt{5}}\end{array}\right)+5\left(\begin{array}{c}
+\frac{1}{\sqrt{5}}\\
+\frac{2}{\sqrt{5}}
+\end{array}\right)\left(\begin{array}{cc}
+\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}\end{array}\right)\\
+ & =\left[\begin{array}{cc}
+8 & -4\\
+-4 & 2
+\end{array}\right]+\left[\begin{array}{cc}
+1 & 2\\
+2 & 4
+\end{array}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Nghịch đảo của ma trận 
+\begin_inset Formula $A$
+\end_inset
+
+ là:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=A^{-1}=\left[\begin{array}{cc}
+9 & -2\\
+-2 & 6
+\end{array}\right]^{-1}=\frac{1}{\det A}\left[\begin{array}{cc}
+6 & 2\\
+2 & 9
+\end{array}\right]=\left[\begin{array}{cc}
+0.12 & 0.04\\
+0.04 & 0.18
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Giải phương trình:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(B-\lambda I)=\lambda^{2}-0.3\lambda+0.02=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=\frac{1}{10}; & v_{1}=\left(\begin{array}{c}
+2\\
+-1
+\end{array}\right)\\
+\lambda_{2}=\frac{1}{5}; & v_{2}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Bài 2.
+\end_layout
+
+\begin_layout Standard
+Cho ma trận:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\left[\begin{array}{cc}
+1 & 2\\
+2 & -2
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B$
+\end_inset
+
+ có xác định dương không?
+\end_layout
+
+\begin_layout Enumerate
+Tìm trị riêng và vectơ riêng, sau đó viết khai triển phổ của 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Tìm nghịch đảo của 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Tìm trị riêng và vectơ riêng của ma trận đó.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ta có:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\left[\begin{array}{cc}
+1 & 2\\
+2 & -2
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta_{1}=\det\left[1\right]=1>0$
+\end_inset
+
+; 
+\begin_inset Formula $\Delta_{2}=\det\left[\begin{array}{cc}
+1 & 2\\
+2 & -2
+\end{array}\right]=-6<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ không xác định dương.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ta giải phương trình:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(B-\lambda I)=\lambda^{2}+\lambda-6=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=2; & v_{1}=\left(\begin{array}{c}
+2\\
+1
+\end{array}\right)\\
+\lambda_{2}=-3; & v_{2}=\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=2; & e_{1}=\text{\left(\begin{array}{c}
+\frac{2}{\sqrt{5}}\\
+\frac{1}{\sqrt{5}}
+\end{array}\right)}\\
+\lambda_{2}=-3; & e_{2}=\text{\left(\begin{array}{c}
+\frac{1}{\sqrt{5}}\\
+\frac{-2}{\sqrt{5}}
+\end{array}\right)}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Khai triển phổ của 
+\begin_inset Formula $B$
+\end_inset
+
+ là:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+B & =\sum_{i=1}^{d}\lambda_{i}e_{i}e_{i}^{T}\\
+ & =\lambda_{1}e_{1}e_{1}^{T}+\lambda_{2}e_{2}e_{2}^{T}\\
+ & =2\left(\begin{array}{c}
+\frac{2}{\sqrt{5}}\\
+\frac{1}{\sqrt{5}}
+\end{array}\right)\left(\begin{array}{cc}
+\frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}}\end{array}\right)+\left(-3\right)\left(\begin{array}{c}
+\frac{1}{\sqrt{5}}\\
+\frac{-2}{\sqrt{5}}
+\end{array}\right)\left(\begin{array}{cc}
+\frac{1}{\sqrt{5}} & \frac{-2}{\sqrt{5}}\end{array}\right)\\
+ & =\left[\begin{array}{cc}
+1.6 & 0.8\\
+0.8 & 0.4
+\end{array}\right]+\left[\begin{array}{cc}
+-0.6 & 1.2\\
+1.2 & -2.4
+\end{array}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Nghịch đảo của ma trận 
+\begin_inset Formula $B$
+\end_inset
+
+ là:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=B^{-1}=\left[\begin{array}{cc}
+1 & 2\\
+2 & -2
+\end{array}\right]^{-1}=\frac{1}{\det B}\left[\begin{array}{cc}
+-2 & -2\\
+-2 & 1
+\end{array}\right]=\left[\begin{array}{cc}
+\frac{1}{3} & \frac{1}{3}\\
+\frac{1}{3} & \frac{-1}{6}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Giải phương trình:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(P-\lambda I)=\lambda^{2}-0.3\lambda+0.02=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=\frac{1}{2}; & v_{1}=\left(\begin{array}{c}
+2\\
+1
+\end{array}\right)\\
+\lambda_{2}=-\frac{1}{3}; & v_{2}=\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bài 3.
+\end_layout
+
+\begin_layout Standard
+Cho ma trận
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\left[\begin{array}{cc}
+1 & 1\\
+2 & -2\\
+2 & 2
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Tính trị riêng và vectơ riêng của 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Tìm trị kỳ dị của 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Làm lại câu a và b cho ma trận
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\left[\begin{array}{ccc}
+4 & 8 & 8\\
+3 & 6 & -9
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=C^{T}C=\left[\begin{array}{ccc}
+1 & 2 & 2\\
+1 & -2 & 2
+\end{array}\right]\left[\begin{array}{cc}
+1 & 1\\
+2 & -2\\
+2 & 2
+\end{array}\right]=\left[\begin{array}{cc}
+9 & 1\\
+1 & 9
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ta giải phương trình:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(P-\lambda I)=\lambda^{2}-18\lambda+80=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=8; & v_{1}=\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)\\
+\lambda_{2}=10; & v_{2}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=2; & e_{1}=\text{\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}
+\end{array}\right)}\\
+\lambda_{2}=-3; & e_{2}=\text{\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{array}\right)}
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Trị kỳ dị của 
+\begin_inset Formula $C$
+\end_inset
+
+ là trị riêng của ma trận 
+\begin_inset Formula $P=C^{T}C=\left[\begin{array}{cc}
+9 & 1\\
+1 & 9
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{c}
+\lambda_{1}=8\\
+\lambda_{2}=10
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ta có ma trận
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=\left[\begin{array}{ccc}
+4 & 8 & 8\\
+3 & 6 & -9
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q=D^{T}D=\left[\begin{array}{cc}
+4 & 3\\
+8 & 6\\
+8 & -9
+\end{array}\right]\left[\begin{array}{ccc}
+4 & 8 & 8\\
+3 & 6 & -9
+\end{array}\right]=\left[\begin{array}{ccc}
+25 & 50 & 5\\
+50 & 100 & 10\\
+5 & 10 & 145
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ta giải phương trình:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det(Q-\lambda I)=-\lambda^{3}+270\lambda^{2}-18000\lambda=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{cc}
+\lambda_{1}=0; & v_{1}=\left(\begin{array}{c}
+2\\
+-1\\
+0
+\end{array}\right)\\
+\lambda_{2}=120; & v_{2}=\left(\begin{array}{c}
+1\\
+2\\
+-1
+\end{array}\right)\\
+\lambda_{3}=150; & v_{3}=\left(\begin{array}{c}
+1\\
+2\\
+-1
+\end{array}\right)
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trị kỳ dị của 
+\begin_inset Formula $D$
+\end_inset
+
+ là trị riêng của ma trận 
+\begin_inset Formula $Q=D^{T}D=\left[\begin{array}{ccc}
+25 & 50 & 5\\
+50 & 100 & 10\\
+5 & 10 & 145
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\begin{array}{c}
+\lambda_{1}=0\\
+\lambda_{2}=120\\
+\lambda_{3}=150
+\end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bài 4.
+\end_layout
+
+\begin_layout Standard
+Dạng toàn phương sau có xác định dương: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3x_{1}^{2}+3x_{2}^{2}-2x_{1}x_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Ma trận trong cơ sở chính tắc của dạng toàn phương là:
+\end_layout
+
+\begin_layout Solution*
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{cc}
+3 & -1\\
+-1 & 3
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Theo định lý Sylvester, 
+\begin_inset Formula $A$
+\end_inset
+
+ xác định dương khi và chỉ khi các định thức con góc trái của 
+\begin_inset Formula $A$
+\end_inset
+
+ luôn dương.
+\end_layout
+
+\begin_layout Solution*
+Mà 
+\begin_inset Formula $\Delta_{1}=\det\left[3\right]=3>0$
+\end_inset
+
+; 
+\begin_inset Formula $\Delta_{2}=\det\left[\begin{array}{cc}
+3 & -1\\
+-1 & 3
+\end{array}\right]=8>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Suy ra, dạng toàn phương xác định dương.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Bài 5.
+\end_layout
+
+\begin_layout Standard
+Cho X có phân phối chuẩn 
+\begin_inset Formula $N_{d}\left(\left[\begin{array}{c}
+0\\
+2
+\end{array}\right];\left[\begin{array}{cc}
+2 & 5\\
+5 & 1
+\end{array}\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Viết tường minh 
+\begin_inset Formula $(X-\mu)^{T}\Sigma^{-1}(X-\mu)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Xác định đường đẳng trị mật độ ứng với xác suất 
+\begin_inset Formula $50\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
