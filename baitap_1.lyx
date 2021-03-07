@@ -1030,5 +1030,312 @@ Xác định đường đẳng trị mật độ ứng với xác suất
 
 \end_layout
 
+\begin_layout Enumerate
+Theo đề bài, ta có:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=\left[\begin{array}{c}
+0\\
+2
+\end{array}\right];\Sigma=\left[\begin{array}{cc}
+2 & 5\\
+5 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow\Sigma^{-1}=\left[\begin{array}{cc}
+2 & 5\\
+5 & 1
+\end{array}\right]^{-1}=\left[\begin{array}{cc}
+\frac{-1}{23} & \frac{5}{23}\\
+\frac{5}{23} & \frac{-2}{23}
+\end{array}\right]
+\]
+
+\end_inset
+
+Với 
+\begin_inset Formula $X=\left[\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right]$
+\end_inset
+
+, khi đó:
+\begin_inset Formula 
+\begin{align*}
+(X-\mu)^{T}\Sigma^{-1}(X-\mu) & =\left[\begin{array}{cc}
+x_{1} & x_{2}-2\end{array}\right]\left[\begin{array}{cc}
+\frac{-1}{23} & \frac{5}{23}\\
+\frac{5}{23} & \frac{-2}{23}
+\end{array}\right]\left[\begin{array}{c}
+x_{1}\\
+x_{2}-2
+\end{array}\right]\\
+ & =\frac{-2}{23}\left\{ \left(\frac{x_{1}}{\sqrt{2}}\right)^{2}+\left(\frac{x_{2}-2}{1}\right)^{2}-5\sqrt{2}\left(\frac{x_{1}}{\sqrt{2}}\right)\left(\frac{x_{2}-2}{1}\right)\right\} \\
+ & =\frac{-2}{23}\left\{ \frac{x_{1}^{2}}{2}+\left(x_{2}-2\right)^{2}-5x_{1}\left(x_{2}-2\right)\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Phương trình đẳng trị mật độ ứng với xác suất 
+\begin_inset Formula $50\%$
+\end_inset
+
+ thỏa mãn
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left[(X-\mu)^{T}\Sigma^{-1}(X-\mu)\le\chi_{2}^{2}\left(0.5\right)\right]=0.5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \Rightarrow(X-\mu)^{T}\Sigma^{-1}(X-\mu)\le\chi_{2}^{2}\left(0.5\right)=1.39=c^{2}\\
+ & \Leftrightarrow\frac{-2}{23}\left\{ \frac{x_{1}^{2}}{2}+\left(x_{2}-2\right)^{2}-5x_{1}\left(x_{2}-2\right)\right\} \le1.39
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Bài 6.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{1},X_{2},X_{3},X_{4}$
+\end_inset
+
+ là các vectơ ngẫu nhiên 
+\begin_inset Formula $d$
+\end_inset
+
+ chiều độc lập và cùng phân phối chuẩn với các tham số 
+\begin_inset Formula $\mu$
+\end_inset
+
+ và 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Tìm các phân phối của 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{1}=\frac{1}{4}X_{1}-\frac{1}{4}X_{2}+\frac{1}{4}X_{3}-\frac{1}{4}X_{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{2}=\frac{1}{4}X_{1}+\frac{1}{4}X_{2}-\frac{1}{4}X_{3}-\frac{1}{4}X_{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Tìm phân phối đồng thời của 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ và 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Xét tổ hợp 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{1}=\frac{1}{4}X_{1}-\frac{1}{4}X_{2}+\frac{1}{4}X_{3}-\frac{1}{4}X_{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kỳ vọng là
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\frac{1}{4}-\frac{1}{4}+\frac{1}{4}-\frac{1}{4})\mu=0\mu=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma trận hiệp phương sai là
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{1}{16}+\frac{1}{16}+\frac{1}{16}+\frac{1}{16}\right)\Sigma=\frac{1}{4}\Sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Xét tổ hợp 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{2}=\frac{1}{4}X_{1}+\frac{1}{4}X_{2}-\frac{1}{4}X_{3}-\frac{1}{4}X_{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kỳ vọng là
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\frac{1}{4}+\frac{1}{4}-\frac{1}{4}-\frac{1}{4})\mu=0\mu=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ma trận hiệp phương sai là
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{1}{16}+\frac{1}{16}+\frac{1}{16}+\frac{1}{16}\right)\Sigma=\frac{1}{4}\Sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ma trận hiệp phương sai của hai tổ hợp tuyến tính là
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{1}{16}-\frac{1}{16}-\frac{1}{16}+\frac{1}{16}\right)\Sigma=0\Sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vậy hai vectơ 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ và 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ có phân phối chuẩn đồng thời 
+\begin_inset Formula $2d$
+\end_inset
+
+ chiều và hai vectơ này độc lập.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
