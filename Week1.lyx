@@ -1,0 +1,531 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\def\questionname{Câu}
+\def\solutionname{Trả lời}
+\end_preamble
+\options 13pt
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language vietnamese
+\language_package default
+\inputencoding utf8x
+\fontencoding T5
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Nội dung thảo luận tuần 1
+\end_layout
+
+\begin_layout Author
+Nguyễn Công Thịnh - 20170924
+\end_layout
+
+\begin_layout Section
+Văn bản 1: 
+\begin_inset Quotes eld
+\end_inset
+
+Con đường dẫn tôi đến chủ nghĩa Lênin
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Khi theo dõi các cuộc bàn cãi trong các chi bộ của Đảng Xã hội Pháp, điều
+ mà Hồ Chí Minh muốn được nghe người ta thảo luận hơn cả là điều gì? Vì
+ sao câu hỏi này lại là câu hỏi quan trọng nhất đối với Hồ Chí Minh?
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Khi theo dõi các cuộc bàn cãi trong các chi bộ của Đảng Xã hội Pháp, điều
+ mà Hồ Chí Minh muốn được nghe người ta thảo luận hơn cả trong cuộc họp
+ là vấn đề trong các Quốc tế thứ hai, Quốc tế thứ hai rưỡi hay Quốc tế thứ
+ ba, cái quốc tế nào bênh vực nhân dân các nước thuộc địa.
+ Tuy nhiên, điều này người ta lại không thảo luận trong cuộc họp.
+\end_layout
+
+\begin_layout Solution*
+Để trả lời 
+\begin_inset Quotes eld
+\end_inset
+
+Vì sao câu hỏi này lại là câu hỏi quan trọng nhất đối với Hồ Chí Minh?
+\begin_inset Quotes erd
+\end_inset
+
+, trước hết ta hãy xem xét bối cảnh lịch sử lúc bấy giờ.
+ Những năm cuối thế kỉ XIX - đầu thế kỉ XX, Việt Nam trở thành thuộc địa
+ của Pháp, giai cấp phong kiến và hệ tư tưởng của nó đã suy tàn, bất lực
+ trước nhiệm vụ bảo vệ dân tộc, chính quyền dần dần trở thành tay sai của
+ thực dân.
+ Trong khi đó, các phong trào yêu nước theo khuynh hướng dân chủ tư sản
+ lần lượt nổ ra nhưng đều có một kết cục chung là thất bại vì nhiều lý do
+ nhưng cơ bản là do chưa có đường lối và phương pháp cách mạng đúng đắn,
+ đồng thời, giai cấp nòng cốt cho cách mạng là giai cấp tư sản còn non yếu.
+ Những lý do này đã thôi thúc Nguyễn Ái Quốc (tức Hồ Chí Minh) rời xa quê
+ hương đi bôn ba xứ người để tìm ra cho được con đường đúng đắn lãnh đạo
+ cách mạng đi đến thắng lợi.
+ Chính vì vậy, đối với Hồ Chí Minh, Người luôn đau đáu trong mình lý tưởng
+ bênh vực nhân dân các nước thuộc địa, tìm kiếm con đường cách mạng chân
+ chính giải phóng nhân dân các nước thuộc địa mà trước hết là giải phóng
+ dân tộc Việt Nam.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Sự kiện nào làm cho Hồ Chí Minh hoàn toàn tin theo Lênin, tin theo Quốc
+ tế thứ ba?
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Sự kiện đánh dấu việc Hồ Chí Minh (lúc bấy giờ tên là Nguyễn Ái Quốc) hoàn
+ toàn tin theo Lênin, tin theo Quốc tế thứ ba là sự kiện Nguyễn Ái Quốc
+ lần đầu tiên đọc bản 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc
+ địa
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ của V.I.
+ Lênin đăng trên báo Nhân đạo để trình bày tại Đại hội II Quốc tế Cộng sản
+ (cụ thể là vào cuối tháng 7-1920).
+ 
+\end_layout
+
+\begin_layout Solution*
+Văn kiện trình bày rõ hướng đi và biện pháp lãnh đạo của Đảng Cộng sản đưa
+ sự nghiệp đấu tranh của các dân tộc thuộc địa đi đến thắng lợi hoàn toàn.
+ Lênin bóc trần thái độ lừa dối của chế độ dân chủ tư sản đối với những
+ người bị bóc lột khi tuyên bố quyền bình đẳng nói chung, trong đó bao gồm
+ cả quyền bình đẳng dân tộc.
+ Lênin cho rằng: “Điều quan trọng nhất trong chính sách của Quốc tế Cộng
+ sản về vấn đề dân tộc và vấn đề thuộc địa là phải làm cho vô sản và quần
+ chúng lao động của tất cả các dân tộc và tất cả các nước gần gũi nhau để
+ tiến hành cuộc đấu tranh cách mạng chung nhằm lật đổ bọn địa chủ và giai
+ cấp tư sản.
+ Bởi vì chỉ có sự gần gũi ấy mới bảo đảm việc chiến thắng chủ nghĩa tư bản,
+ nếu không có chiến thắng đó thì không thể thủ tiêu được ách áp bức dân
+ tộc và tình trạng bất bình đẳng”.
+\end_layout
+
+\begin_layout Solution*
+Luận cương đã giải đáp những vấn đề cơ bản và chỉ dẫn hướng phát triển của
+ sự nghiệp cứu nước, giải phóng dân tộc mà qua 9 năm tìm kiếm (1911-1920)
+ Người mới bắt gặp, giúp cho Nguyễn Ái Quốc nhận biết một tổ chức chính
+ trị cần tham gia là Quốc tế III do Lênin sáng lập và lãnh đạo thực sự giúp
+ đỡ các dân tộc bị áp bức đấu tranh chống chủ nghĩa đế quốc giành độc lập
+ tự do.
+ Từ đó, Người hoàn toàn tin theo Lênin, tin theo Quốc tế thứ ba (thể hiện
+ qua chi tiết 
+\begin_inset Quotes eld
+\end_inset
+
+Luận cương của Lênin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng
+ biết bao.
+ Tôi vui mừng đến phát khóc lên.
+ Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng
+ đông đảo: “Hỏi đồng bào bị đoạ đầy đau khổ.
+ Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta!”
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Lúc đầu, yếu tố nào đưa Hồ Chí Minh tin theo Lê nin, tin theo Quốc tế thứ
+ ba?
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Lúc đầu, yếu tố đưa Hồ Chí Minh tin theo Lê nin, tin theo Quốc tế thứ ba
+ là chủ nghĩa yêu nước chứ chưa phải chủ nghĩa cộng sản.
+ Ban đầu, Người ra đi tìm đường cứu nước là vì lòng yêu nước, lý trí tìm
+ cho ra con đường giải phóng dân tộc, 
+\begin_inset Quotes eld
+\end_inset
+
+phải đi ra nước ngoài xem cho rõ, sau khi xem xét họ làm ăn ra sao, sẽ trở
+ về giúp đồng bào
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Người luôn mang trong mình tâm thế là người dân xứ thuộc địa đi tìm đường
+ lối và phương pháp lãnh đạo cách mạng đúng đắn.
+ Chính chủ nghĩa yêu nước đã đưa Người tin theo Lênin, tán thành Quốc tế
+ thứ ba, xác định rõ ràng: 
+\begin_inset Quotes eld
+\end_inset
+
+muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường
+ cách mạng vô sản, con đường do Lênin và Quốc tế Cộng sản vạch ra
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+làm tư sản dân quyền cách mệnh và thổ địa cách mệnh để đi tới xã hội cộng
+ sản
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Dần dần về sau, Hồ Chí Minh hiểu ra được điều gì rất quan trọng về con đường
+ cứu nước?
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Trải qua thời gian vừa làm công tác thực tế, dần dần Hồ Chí Minh hiểu được
+ rằng chỉ có chủ nghĩa xã hội, chủ nghĩa cộng sản mới giải phóng được các
+ dân tộc bị áp bức và những người lao động trên thế giới khỏi ách nô lệ.
+\end_layout
+
+\begin_layout Solution*
+Độc lập dân tộc gắn liền với chủ nghĩa xã hội là nội dung cốt lõi xuyên
+ suốt toàn bộ tư tưởng Hồ Chí Minh.
+ Đây là sự phản ánh chính xác mục đích, lý tưởng, khát vọng và ham muốn
+ tột bậc của Hồ Chí Minh: 
+\begin_inset Quotes eld
+\end_inset
+
+nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ta
+ ai cũng có cơm ăn, áo mặc, ai cũng được học hành
+\begin_inset Quotes erd
+\end_inset
+
+; đồng thời phản ánh tính triệt để cách mạng của tư tưởng Hồ Chí Minh.
+ Tư tưởng đó đặt vấn đề giải phóng con người, hạnh phúc của con người ở
+ mục tiêu cao nhất của sự nghiệp cách mạng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Đọc văn bản trên để làm rõ vai trò của Chủ nghĩa Mác - Lênin đối với tư
+ tưởng Hồ Chí Minh.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Chủ nghĩa Mác-Lênin gồm 3 bộ phận cấu thành: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Triết học giúp Hồ Chí Minh hình thành thế giới quan, nhân sinh quan, khoa
+ học, phương pháp luận trong nhận thức và hoạt động cách mạng, thấy được
+ những quy luật vận động phát triển của thế giới và xã hội loài người.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kinh tế chính trị học vạch rõ các quan hệ xã hội được hình thành phát triển
+ gắn với quá trình sản xuất, giúp Người thấy được bản chất bóc lột của chủ
+ nghĩa tư bản, từ đó, hình thành tư tưởng xóa bỏ bóc lột gắn liền với xóa
+ bỏ quan hệ sản xuất tư bản chủ nghĩa và sự chuyển biến tất yếu của xã hội
+ loài người từ chủ nghĩa tư bản lên chủ nghĩa cộng sản.
+\end_layout
+
+\begin_layout Itemize
+Chủ nghĩa xã hội khoa học vạch ra quy luật phát sinh, hình thành, phát triển
+ của hình thái kinh tế xã hội cộng sản chủ nghĩa, những điều kiện, tiền
+ đề, nguyên tắc, con đường, học thức, phương pháp của giai cấp công nhân,
+ nhân dân lao động để thực hiện sự chuyển biến xã hội từ chủ nghĩa tư bản
+ lên chủ nghĩa xã hội, cộng sản.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Như vậy, chủ nghĩa Mác-Lênin với bản chất cách mạng và khoa học của nó giúp
+ Người chuyển biến từ chủ nghĩa yêu nước không có khuynh hướng rõ rệt thành
+ người cộng sản, chủ nghĩa yêu nước gắn chặt với chủ nghĩa quốc tế, độc
+ lập dân tộc gắn liền với chủ nghĩa xã hội.
+ Đồng thời giúp Hồ Chí Minh thấy được vai trò của quần chúng nhân dân, sứ
+ mệnh lịch sử của giai cấp công nhân, liên minh công nông trí thức và vai
+ trò lãnh đạo của đảng cộng sản trong cách mạng giải phóng dân tộc, giải
+ phóng giai cấp, giải phóng xã hội, giải phóng con người, bảo đảm thắng
+ lợi cho chủ nghĩa xã hội, chủ nghĩa cộng sản.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Văn bản 2:
+\end_layout
+
+\begin_layout Question
+Đọc nội dung văn bản trên để làm rõ những khó khăn, thử thách mà Hồ Chí
+ Minh đã trải qua trong quá trình hoạt động cách mạng.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Những khó khăn, thử thách mà Hồ Chí Minh đã trải qua trong quá trình hoạt
+ động cách mạng là:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sau sự kiện bị bắt tại Cửu Long, Hương Cảng, năm 1933, Hồ Chí Minh rời Hồng
+ Kông sang Liên Xô.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tháng 6-1934, Người đặt chân đến Mátxcơva, nhưng Quốc tế Cộng sản (QTCS)
+ lại cử Người đi học khóa bồi dưỡng lý luận.
+ Dù đã trở về trung tâm phong trào cộng sản quốc tế, sống giữa những người
+ đồng chí, nhưng Người vẫn phải đối mặt với sự nghi kị về nhiều lý do khác
+ nhau.
+ Đó là vì sự xuất hiện những chủ trương mang tính chất “tả khuynh” trong
+ tư tưởng và lý luận của Quốc tế Cộng sản (xuất hiện sau khi Lênin qua đời
+ năm 1924), đặc biệt là sự bất đồng quan điểm giữa Hồ Chí Minh với Quốc
+ tế Cộng sản về phương pháp cách mạng, nhất là bạo động và chất lượng cán
+ bộ hạt nhân phong trào.
+ Thậm chí đầu năm 1935, một lá thư gửi Vụ Hải ngoại QTCS còn đề nghị Hồ
+ Chí Minh tu dưỡng bản thân trong học tập và không bố trí công tác khác.
+ Chính vì vậy, Người bị cô lập và rơi vào trạng thái không hoạt động trong
+ suốt nhiều năm.
+\end_layout
+
+\begin_layout Itemize
+Nguyễn Ái Quốc còn bị đánh giá là một người mang nặng tư tưởng chủ nghĩa
+ dân tộc, cùng sự nghi ngờ ám ảnh về việc hình như Người được thực dân Anh
+ thả tự do quá dễ dàng? Hồ Chí Minh mang nỗi khổ tâm nặng trĩu trong lòng
+ khi phải đối diện và tự mình giải tỏa những ngờ vực này dù sống ngay trung
+ tâm phong trào cộng sản quốc tế.
+ Như vậy trong 5 năm (1934-1938), Người đã phải sống trong bầu không khí
+ nghi ngờ bao trùm, trong những xáo động của QTCS, trong cuộc thanh trừng
+ nội bộ căng thẳng ngay trong Đảng Cộng sản Liên Xô.
+ Tuy nhiên, có thể nói rằng Hồ Chí Minh luôn sống và làm việc vì Đảng ở
+ bất kỳ hoàn cảnh và môi trường nào.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Câu hỏi ôn tập cuối chương 2
+\end_layout
+
+\begin_layout Question
+Phân tích cơ sở thực tiễn Việt Nam hình thành Tư tưởng Hồ Chí Minh? Giá
+ trị Tư tưởng Hồ Chí Minh đối với sự nghiệp đổi mới ở Việt Nam hiện nay.
+\end_layout
+
+\begin_layout Solution*
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Cơ sở thực tiễn Việt Nam hình thành Tư tưởng Hồ Chí Minh là: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Phân tích cơ sở lý luận: Giá trị truyền thống của dân tộc Việt Nam hình
+ thành Tư tưởng Hồ Chí Minh.
+ Vai trò của việc giáo dục giá trị truyền thống dân tộc đối với sinh viên
+ hiện nay?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question
+Nêu các cơ sở lý luận hình thành tư tưởng Hồ Chí Minh.
+ Trong các nội dung trên, nội dung nào là quan trọng quyết định bước phát
+ triển về chất của tư tưởng Hồ Chí Minh? Tại sao?
+\end_layout
+
+\end_body
+\end_document
